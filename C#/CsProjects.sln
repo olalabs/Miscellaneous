@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectFilesCopier", "ProjectFilesCopier\ProjectFilesCopier.csproj", "{4CC44884-3204-4421-AD13-1102385C2B2A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResolutionChanger", "ResolutionChanger\ResolutionChanger.csproj", "{D7179BC9-7A9B-480E-8288-6D1D1806B9A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{4CC44884-3204-4421-AD13-1102385C2B2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CC44884-3204-4421-AD13-1102385C2B2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CC44884-3204-4421-AD13-1102385C2B2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7179BC9-7A9B-480E-8288-6D1D1806B9A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7179BC9-7A9B-480E-8288-6D1D1806B9A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7179BC9-7A9B-480E-8288-6D1D1806B9A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7179BC9-7A9B-480E-8288-6D1D1806B9A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
