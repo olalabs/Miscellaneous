@@ -1,0 +1,82 @@
+<?xml version="1.0"?> 
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
+	
+	<xs:complexType name="personlisttype"> 
+		<xs:sequence> 
+			<xs:element name="person" type="persontype" minOccurs="1" maxOccurs="unbounded"/> 				
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="persontype"> 
+		<xs:sequence> 
+			<xs:element name="firstname" type="string_1_35"/>
+			<xs:element name="lastname"  type="string_1_35"/>
+			<xs:element name="pesel" type="peseltype"/>
+			<xs:element name="birthdate" type="xs:date"/>
+			<xs:element name="sex" type="sextype"/>
+			<xs:element name="address" type="addresstype"/>
+			<xs:element name="phone" type="phonetype"/>
+			<xs:element name="email" type="emailtype"/>
+			<xs:element name="profession" type="string_1_35"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="addresstype">
+		<xs:sequence>
+			<xs:element name="street"  type="string_1_35"/>
+			<xs:element name="housenumber" type="housenumbertype"/>
+			<xs:element name="suite" type="xs:unsignedInt"/>
+			<xs:element name="city"  type="string_1_35"/>
+			<xs:element name="postalcode" type="postalcodetype"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:simpleType name="string_1_35">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="35"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="peseltype">
+		<xs:restriction base="xs:string">
+			<xs:pattern value ="\d{11}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="sextype">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="K"/>
+			<xs:enumeration value="M"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="phonetype">
+		<xs:restriction base="xs:string">
+			<xs:pattern value= "\+\d{11}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="emailtype">
+		<xs:restriction base="xs:string">
+			<xs:pattern value= ".*@.*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="housenumbertype">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="10"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="postalcodetype">
+		<xs:restriction base="xs:string">
+			<xs:pattern value= "\d{2}[-]\d{3}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:element name="personlist" type="personlisttype"/> 
+	
+</xs:schema>
+
