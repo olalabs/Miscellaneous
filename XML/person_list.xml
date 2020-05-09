@@ -1,0 +1,95 @@
+<?xml version ="1.0" encoding = "UTF-8" ?> 
+<?xml-stylesheet type="text/xsl" href="XML_to_HTML_converter.xsl"?>
+<document>
+	<personlist>
+		<person>
+			<firstname>Kazimierz</firstname>
+			<lastname>Kowalski</lastname>
+			<pesel>88051678134</pesel>
+			<birthdate>1988-05-16</birthdate>
+			<sex>M</sex>
+			<address>
+				<street>Zamkowa</street>
+				<housenumber>5</housenumber>
+				<suite>2</suite>
+				<city>Radom</city>
+				<postalcode>10-752</postalcode>
+			</address>
+			<phone>+72122233323</phone>
+			<email>kazio@wp.pl</email>
+			<profession>budowlaniec</profession>
+		</person>
+		
+		<person>
+			<firstname>Alina</firstname>
+			<lastname>Drzewiecka</lastname>
+			<pesel>78091777134</pesel>
+			<birthdate>1978-09-17</birthdate>
+			<sex>K</sex>
+			<address>
+				<street>Malarska</street>
+				<housenumber>7</housenumber>
+				<suite>10</suite>
+				<city>Kielce</city>
+				<postalcode>13-142</postalcode>
+			</address>
+			<phone>+56122253564</phone>
+			<email>alina78@gmail.com</email>
+			<profession>nauczycielka</profession>
+		</person>
+		
+		<person>
+			<firstname>Stefan</firstname>
+			<lastname>Garylski</lastname>
+			<pesel>67031078237</pesel>
+			<birthdate>1967-03-10</birthdate>
+			<sex>M</sex>
+			<address>
+				<street>Ulicowa</street>
+				<housenumber>5</housenumber>
+				<suite>2</suite>
+				<city>Radom</city>
+				<postalcode>15-135</postalcode>
+			</address>
+			<phone>+52522234367</phone>
+			<email>stefan456@wp.pl</email>
+			<profession>murarz</profession>
+		</person>
+		
+		<person>
+			<firstname>Zenon</firstname>
+			<lastname>Felek</lastname>
+			<pesel>64022878134</pesel>
+			<birthdate>1964-02-28</birthdate>
+			<sex>M</sex>
+			<address>
+				<street>Inna</street>
+				<housenumber>68</housenumber>
+				<suite>4</suite>
+				<city>Kalisz</city>
+				<postalcode>14-539</postalcode>
+			</address>
+			<phone>+69122245647</phone>
+			<email>zenon@wp.pl</email>
+			<profession>malarz</profession>
+		</person>
+		
+		<person>
+			<firstname>Danuta</firstname>
+			<lastname>Poteralska</lastname>
+			<pesel>77011178134</pesel>
+			<birthdate>1977-01-11</birthdate>
+			<sex>K</sex>
+			<address>
+				<street>Serowa</street>
+				<housenumber>7</housenumber>
+				<suite>3</suite>
+				<city>Lisie Pole</city>
+				<postalcode>17-143</postalcode>
+			</address>
+			<phone>+66923432337</phone>
+			<email>dana@wp.pl</email>
+			<profession>krawcowa</profession>
+		</person>
+	</personlist>
+</document>
