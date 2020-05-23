@@ -1,5 +1,5 @@
 # Miscellaneous
-Small projects in various programming languages.
+Small projects in various languages.
 
 ## Table of contents
 * [C#](#C#)
