@@ -40,7 +40,7 @@ Program parameters:
 * **myls.pl** - a substitute for the ls command from Linux
 
 The program accepts three optional parameters given in any order:
-1. name of the directory whose content is to be output by the program (by default, we accept the current directory),
+1. name of the directory whose content is to be output by the program (by default - accept the current directory),
 2. the -l option to run the "long" form of results output to stdout,
 3. the -L option that causes the file list for each entry to also contain the name of the file owner.
 
