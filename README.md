@@ -64,6 +64,7 @@ The html file is loaded from stdin, and the obtained extract should be output to
 ## Python
 * **DuplicateFilesFinder** - script detecting duplicate files in directories specified in the parameters. Duplicates are files of identical size and identical content (byte by byte).
 * **HistogramAndDecrypter** - script to create a histogram of Latin letters and decrypt the substitution cipher
+* **htmlParser** - script that parses html to csv. The same rules as in the perl script described above.
 
 ## Xml Markup Language
 
