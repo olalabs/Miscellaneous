@@ -4,6 +4,7 @@ Small projects in various languages.
 ## Table of contents
 * [C#](#C#)
 * [Perl](#Perl)
+* [Python](#Python)
 * [Xml Markup Language](#Xml-Markup-Language)
 
 ## C# 
@@ -59,6 +60,10 @@ The script assumes that the html documents from the pages listed below are in th
 I introduced an additional mechanism for loading a text file with the name passed by the script argument, containing the names of the players' accounts (one per line) to be included when outputting the statement; accounts not listed in this file are skipped.
 
 The html file is loaded from stdin, and the obtained extract should be output to stdout in CSV format (with fields limited by quotation marks and separated by commas) 
+
+## Python
+* **DuplicateFilesFinder** - script detecting duplicate files in directories specified in the parameters. Duplicates are files of identical size and identical content (byte by byte).
+* **HistogramAndDecrypter** - script to create a histogram of Latin letters and decrypt the substitution cipher
 
 ## Xml Markup Language
 
