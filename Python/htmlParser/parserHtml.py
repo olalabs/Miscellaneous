@@ -57,7 +57,7 @@ class HtmlParser():
 
             index += 1
 
-        print(result)
+        sys.stdout.write(result + '\n')
 
 
 parser = HtmlParser()
