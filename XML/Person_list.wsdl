@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.wi.zut.edu.pl/Person_list/" 
+xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Person_list" 
+targetNamespace="http://www.wi.zut.edu.pl/Person_list/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.wi.zut.edu.pl/Person_list/" xmlns:Q1="http://www.wi.zut.edu.pl/Person_list/types">
+      <xsd:import schemaLocation="XML_validator.xsd" namespace="http://www.wi.zut.edu.pl/Person_list/types"></xsd:import>
+      <xsd:element name="get_person_list_op">
+        <xsd:complexType>
+          <xsd:sequence>
+
+          	<xsd:element name="add_person" type="Q1:persontype"></xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="person_list_opResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+          	<xsd:element name="Person_list" type="Q1:personlisttype" />
+          	<xsd:element name="add_person_result" type="xsd:string"></xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="person_list_opRequest">
+    <wsdl:part element="tns:get_person_list_op" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="person_list_opResponse">
+    <wsdl:part element="tns:person_list_opResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:portType name="Person_list">
+    <wsdl:operation name="person_list_op">
+      <wsdl:input message="tns:person_list_opRequest"/>
+      <wsdl:output message="tns:person_list_opResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Person_listSOAP" type="tns:Person_list">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="person_list_op">
+      <soap:operation soapAction="http://www.wi.zut.edu.pl/Person_list/person_list_op"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Person_list">
+    <wsdl:port binding="tns:Person_listSOAP" name="Person_listSOAP">
+      <soap:address location="http://www.example.org/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
