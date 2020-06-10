@@ -5,7 +5,8 @@ Small projects in various languages.
 * [C#](#C#)
 * [Perl](#Perl)
 * [Python](#Python)
-* [Xml Markup Language](#Xml-Markup-Language)
+* [XML Markup Language](#Xml-Markup-Language)
+* [OWL (Web Ontology Language)](#Owl)
 
 ## C# 
 
@@ -64,7 +65,7 @@ The html file is loaded from stdin, and the obtained extract should be output to
 ## Python
 * **DuplicateFilesFinder** - script detecting duplicate files in directories specified in the parameters. Duplicates are files of identical size and identical content (byte by byte).
 * **HistogramAndDecrypter** - script to create a histogram of Latin letters and decrypt the substitution cipher
-* **htmlParser** - script that parses html to csv. The same rules as in the perl script described above.
+* **htmlParser** - script that parses html to csv. The same rules as in the perl script described above
 
 ## Xml Markup Language
 
@@ -74,3 +75,7 @@ The html file is loaded from stdin, and the obtained extract should be output to
 * **XML_to_PDF_converter.xsl** - XML to PDF conversion (nodes to table)
 * **XML_DOM_tableView.html** - HTML doc with onload event support
 * **XML_DOM_parser.js** - XML DOM parser in JavaScript (nodes to HTML table)
+* **Person_list.wsdl** - wsdl with the service of adding person (request and response)
+
+## OWL
+* **burger-ontology.owl** - a burger ontology that describes various burgers based on their toppings (status: in development)
