@@ -1,0 +1,2238 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.burger.com/mariola/semanticweb/ontology/2020/burger"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.burger.com/mariola/semanticweb/ontology/2020/burger">
+    <Prefix name="" IRI="http://www.burger.com/mariola/ontologies/2020/5/burger#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <Literal xml:lang="en">A burger ontology that describes various burgers based on their toppings.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <Literal>Mariola Wójcik</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/provenance"/>
+        <Literal xml:lang="en">v1.1. Added Food class hierarchy (used in domain/range of hasIngredient), definitions, relations, Made primitive siblings disjoint, Made hasTopping invers functional.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal>burger</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#BBQ"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BBQSouceTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BaconTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Badass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BeefTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BeetsTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BigBite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BlackBean"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BlackBeanTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BreadedCheeseTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Burger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BurgerBun"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BurgerTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Butcher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CheddarTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CheeseTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cheeseburger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CheesyBurger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chicken"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClassicCheeseburger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Colossus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CountrySausageTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Demon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DomainThing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DoubleColossus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FetaTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Food"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FriedOnionTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FriedSweetPotatoTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GardenBurger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Giant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GoatCheeseTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GoudaTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Homie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JalapenoPepperTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KetchupSauceTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kocker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LettuceTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MarinatedChickenBreastTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MayonnaiseSouceTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeatTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeatyBurger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mild"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MustardSauceTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NamedBurger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonVegetarianBurger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OnionTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PepperTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PepperoniSausageTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PickledCucumberTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PotatoBun"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RedOnionTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Royal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Salantos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SauceTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SesameSeedBun"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SmokedCheeseTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SmokedPaprikaTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spiciness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpicyBurger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpicySauceTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpicyTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SweetPotato"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TatarSouceTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TomatoTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Triple"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ValuePartition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VegetableTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VegetarianBurger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VegetarianTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WhiteOnion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBun"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasIngredient"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSpiciness"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTopping"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBunOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isIngredientOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isToppingOf"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/provenance"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#CheesyBurger"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Burger"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasTopping"/>
+                <Class IRI="#BurgerTopping"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MeatyBurger"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Burger"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasTopping"/>
+                <Class IRI="#MeatTopping"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#NonVegetarianBurger"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Burger"/>
+            <ObjectComplementOf>
+                <Class IRI="#VegetarianBurger"/>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Spiciness"/>
+        <ObjectUnionOf>
+            <Class IRI="#Hot"/>
+            <Class IRI="#Medium"/>
+            <Class IRI="#Mild"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SpicyBurger"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Burger"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasTopping"/>
+                <Class IRI="#SpicyTopping"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SpicyTopping"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#BurgerTopping"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSpiciness"/>
+                <Class IRI="#Hot"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#VegetarianBurger"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Burger"/>
+            <ObjectComplementOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasTopping"/>
+                    <Class IRI="#MeatTopping"/>
+                </ObjectSomeValuesFrom>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#VegetarianTopping"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#BurgerTopping"/>
+            <ObjectUnionOf>
+                <Class IRI="#CheeseTopping"/>
+                <Class IRI="#SauceTopping"/>
+                <Class IRI="#VegetableTopping"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#BBQ"/>
+        <Class IRI="#NamedBurger"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BBQ"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#BeefTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BBQ"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#FriedOnionTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BBQ"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#GoudaTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BBQ"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#LettuceTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BBQ"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#PepperoniSausageTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BBQ"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#TomatoTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BBQ"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <ObjectUnionOf>
+                <Class IRI="#BeefTopping"/>
+                <Class IRI="#FriedOnionTopping"/>
+                <Class IRI="#GoudaTopping"/>
+                <Class IRI="#LettuceTopping"/>
+                <Class IRI="#PepperoniSausageTopping"/>
+                <Class IRI="#TomatoTopping"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BBQSouceTopping"/>
+        <Class IRI="#SauceTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BaconTopping"/>
+        <Class IRI="#MeatTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BaconTopping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpiciness"/>
+            <Class IRI="#Mild"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Badass"/>
+        <Class IRI="#NamedBurger"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Badass"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#BeefTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Badass"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#BreadedCheeseTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Badass"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#FriedOnionTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Badass"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#LettuceTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Badass"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#TomatoTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Badass"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <ObjectUnionOf>
+                <Class IRI="#BeefTopping"/>
+                <Class IRI="#BreadedCheeseTopping"/>
+                <Class IRI="#FriedOnionTopping"/>
+                <Class IRI="#LettuceTopping"/>
+                <Class IRI="#TomatoTopping"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BeefTopping"/>
+        <Class IRI="#MeatTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BeefTopping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpiciness"/>
+            <Class IRI="#Mild"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BeetsTopping"/>
+        <Class IRI="#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BeetsTopping"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <ObjectUnionOf>
+                <Class IRI="#LettuceTopping"/>
+                <Class IRI="#MarinatedChickenBreastTopping"/>
+                <Class IRI="#TomatoTopping"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BigBite"/>
+        <Class IRI="#NamedBurger"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BigBite"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#BaconTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BigBite"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#GoudaTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BigBite"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#LettuceTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BigBite"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#TomatoTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BigBite"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <ObjectUnionOf>
+                <Class IRI="#BaconTopping"/>
+                <Class IRI="#GoudaTopping"/>
+                <Class IRI="#LettuceTopping"/>
+                <Class IRI="#TomatoTopping"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BlackBean"/>
+        <Class IRI="#NamedBurger"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BlackBean"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#BlackBeanTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BlackBean"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#FetaTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BlackBean"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#LettuceTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BlackBean"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#SmokedPaprikaTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BlackBean"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#WhiteOnion"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BlackBean"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <ObjectUnionOf>
+                <Class IRI="#BlackBeanTopping"/>
+                <Class IRI="#FetaTopping"/>
+                <Class IRI="#LettuceTopping"/>
+                <Class IRI="#SmokedPaprikaTopping"/>
+                <Class IRI="#WhiteOnion"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BlackBeanTopping"/>
+        <Class IRI="#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BreadedCheeseTopping"/>
+        <Class IRI="#CheeseTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BreadedCheeseTopping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpiciness"/>
+            <Class IRI="#Mild"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Burger"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Burger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBun"/>
+            <Class IRI="#BurgerBun"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BurgerBun"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BurgerTopping"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Butcher"/>
+        <Class IRI="#NamedBurger"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Butcher"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#BeefTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Butcher"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#CheddarTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Butcher"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#LettuceTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Butcher"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#PickledCucumberTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Butcher"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#RedOnionTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Butcher"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#TomatoTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Butcher"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <ObjectUnionOf>
+                <Class IRI="#BeefTopping"/>
+                <Class IRI="#CheddarTopping"/>
+                <Class IRI="#LettuceTopping"/>
+                <Class IRI="#PickledCucumberTopping"/>
+                <Class IRI="#RedOnionTopping"/>
+                <Class IRI="#TomatoTopping"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CheddarTopping"/>
+        <Class IRI="#CheeseTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CheddarTopping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpiciness"/>
+            <Class IRI="#Mild"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CheeseTopping"/>
+        <Class IRI="#BurgerTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cheeseburger"/>
+        <Class IRI="#NamedBurger"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cheeseburger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#BeefTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cheeseburger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#GoudaTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cheeseburger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#LettuceTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cheeseburger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#TomatoTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cheeseburger"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <ObjectUnionOf>
+                <Class IRI="#BeefTopping"/>
+                <Class IRI="#GoudaTopping"/>
+                <Class IRI="#LettuceTopping"/>
+                <Class IRI="#TomatoTopping"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chicken"/>
+        <Class IRI="#NamedBurger"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chicken"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#LettuceTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chicken"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#MarinatedChickenBreastTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chicken"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#TomatoTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chicken"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <ObjectUnionOf>
+                <Class IRI="#LettuceTopping"/>
+                <Class IRI="#MarinatedChickenBreastTopping"/>
+                <Class IRI="#TomatoTopping"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClassicCheeseburger"/>
+        <Class IRI="#NamedBurger"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClassicCheeseburger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#BeefTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClassicCheeseburger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#GoudaTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClassicCheeseburger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#LettuceTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClassicCheeseburger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#RedOnionTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClassicCheeseburger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#TomatoTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClassicCheeseburger"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <ObjectUnionOf>
+                <Class IRI="#BeefTopping"/>
+                <Class IRI="#GoudaTopping"/>
+                <Class IRI="#LettuceTopping"/>
+                <Class IRI="#RedOnionTopping"/>
+                <Class IRI="#TomatoTopping"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Colossus"/>
+        <Class IRI="#NamedBurger"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Colossus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#BeefTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Colossus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#GoudaTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Colossus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#LettuceTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Colossus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#PickledCucumberTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Colossus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#TomatoTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Colossus"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <ObjectUnionOf>
+                <Class IRI="#BeefTopping"/>
+                <Class IRI="#GoudaTopping"/>
+                <Class IRI="#LettuceTopping"/>
+                <Class IRI="#PickledCucumberTopping"/>
+                <Class IRI="#TomatoTopping"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CountrySausageTopping"/>
+        <Class IRI="#MeatTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CountrySausageTopping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpiciness"/>
+            <Class IRI="#Mild"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Demon"/>
+        <Class IRI="#NamedBurger"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Demon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#BeefTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Demon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#GoudaTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Demon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#JalapenoPepperTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Demon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#LettuceTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Demon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#PepperoniSausageTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Demon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#PickledCucumberTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Demon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#TomatoTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Demon"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <ObjectUnionOf>
+                <Class IRI="#BeefTopping"/>
+                <Class IRI="#GoudaTopping"/>
+                <Class IRI="#JalapenoPepperTopping"/>
+                <Class IRI="#LettuceTopping"/>
+                <Class IRI="#PepperoniSausageTopping"/>
+                <Class IRI="#PickledCucumberTopping"/>
+                <Class IRI="#TomatoTopping"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DoubleColossus"/>
+        <Class IRI="#NamedBurger"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DoubleColossus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#BeefTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DoubleColossus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#CheddarTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DoubleColossus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#GoudaTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DoubleColossus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#LettuceTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DoubleColossus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#PickledCucumberTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DoubleColossus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#TomatoTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DoubleColossus"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <ObjectUnionOf>
+                <Class IRI="#BeefTopping"/>
+                <Class IRI="#CheddarTopping"/>
+                <Class IRI="#GoudaTopping"/>
+                <Class IRI="#LettuceTopping"/>
+                <Class IRI="#PickledCucumberTopping"/>
+                <Class IRI="#TomatoTopping"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FetaTopping"/>
+        <Class IRI="#CheeseTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FetaTopping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpiciness"/>
+            <Class IRI="#Mild"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Food"/>
+        <Class IRI="#DomainThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FriedOnionTopping"/>
+        <Class IRI="#OnionTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FriedSweetPotatoTopping"/>
+        <Class IRI="#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GardenBurger"/>
+        <Class IRI="#NamedBurger"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Giant"/>
+        <Class IRI="#NamedBurger"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Giant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#BaconTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Giant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#BeefTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Giant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#BeetsTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Giant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#FriedOnionTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Giant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#GoudaTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Giant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#LettuceTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Giant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#TomatoTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Giant"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <ObjectUnionOf>
+                <Class IRI="#BaconTopping"/>
+                <Class IRI="#BeefTopping"/>
+                <Class IRI="#BeetsTopping"/>
+                <Class IRI="#FriedOnionTopping"/>
+                <Class IRI="#GoudaTopping"/>
+                <Class IRI="#LettuceTopping"/>
+                <Class IRI="#TomatoTopping"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GoatCheeseTopping"/>
+        <Class IRI="#CheeseTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GoatCheeseTopping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpiciness"/>
+            <Class IRI="#Mild"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GoudaTopping"/>
+        <Class IRI="#CheeseTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GoudaTopping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpiciness"/>
+            <Class IRI="#Mild"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Homie"/>
+        <Class IRI="#NamedBurger"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Homie"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#BeefTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Homie"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#CountrySausageTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Homie"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#GoudaTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Homie"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#LettuceTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Homie"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#TomatoTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Homie"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#WhiteOnion"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Homie"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <ObjectUnionOf>
+                <Class IRI="#BeefTopping"/>
+                <Class IRI="#CountrySausageTopping"/>
+                <Class IRI="#GoudaTopping"/>
+                <Class IRI="#LettuceTopping"/>
+                <Class IRI="#TomatoTopping"/>
+                <Class IRI="#WhiteOnion"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hot"/>
+        <Class IRI="#Spiciness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JalapenoPepperTopping"/>
+        <Class IRI="#PepperTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KetchupSauceTopping"/>
+        <Class IRI="#SauceTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kocker"/>
+        <Class IRI="#NamedBurger"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kocker"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#BreadedCheeseTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kocker"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#LettuceTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kocker"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#MarinatedChickenBreastTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kocker"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#PepperoniSausageTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kocker"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#RedOnionTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kocker"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#SmokedCheeseTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kocker"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#TomatoTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kocker"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <ObjectUnionOf>
+                <Class IRI="#BreadedCheeseTopping"/>
+                <Class IRI="#LettuceTopping"/>
+                <Class IRI="#MarinatedChickenBreastTopping"/>
+                <Class IRI="#PepperoniSausageTopping"/>
+                <Class IRI="#RedOnionTopping"/>
+                <Class IRI="#SmokedCheeseTopping"/>
+                <Class IRI="#TomatoTopping"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LettuceTopping"/>
+        <Class IRI="#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MarinatedChickenBreastTopping"/>
+        <Class IRI="#MeatTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MarinatedChickenBreastTopping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpiciness"/>
+            <Class IRI="#Mild"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MayonnaiseSouceTopping"/>
+        <Class IRI="#SauceTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeatTopping"/>
+        <Class IRI="#BurgerTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medium"/>
+        <Class IRI="#Spiciness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mild"/>
+        <Class IRI="#Spiciness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MustardSauceTopping"/>
+        <Class IRI="#SauceTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NamedBurger"/>
+        <Class IRI="#Burger"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonVegetarianBurger"/>
+        <Class IRI="#Burger"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OnionTopping"/>
+        <Class IRI="#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PepperTopping"/>
+        <Class IRI="#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PepperoniSausageTopping"/>
+        <Class IRI="#MeatTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PepperoniSausageTopping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpiciness"/>
+            <Class IRI="#Medium"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PickledCucumberTopping"/>
+        <Class IRI="#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PotatoBun"/>
+        <Class IRI="#BurgerBun"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RedOnionTopping"/>
+        <Class IRI="#OnionTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Royal"/>
+        <Class IRI="#NamedBurger"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Royal"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#BaconTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Royal"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#GoudaTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Royal"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#LettuceTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Royal"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#MarinatedChickenBreastTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Royal"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#TomatoTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Royal"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <ObjectUnionOf>
+                <Class IRI="#BaconTopping"/>
+                <Class IRI="#GoudaTopping"/>
+                <Class IRI="#LettuceTopping"/>
+                <Class IRI="#MarinatedChickenBreastTopping"/>
+                <Class IRI="#TomatoTopping"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Salantos"/>
+        <Class IRI="#NamedBurger"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Salantos"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#BreadedCheeseTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Salantos"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#LettuceTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Salantos"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#PickledCucumberTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Salantos"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#RedOnionTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Salantos"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#TomatoTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Salantos"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <ObjectUnionOf>
+                <Class IRI="#BreadedCheeseTopping"/>
+                <Class IRI="#LettuceTopping"/>
+                <Class IRI="#PickledCucumberTopping"/>
+                <Class IRI="#RedOnionTopping"/>
+                <Class IRI="#TomatoTopping"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SauceTopping"/>
+        <Class IRI="#BurgerTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SesameSeedBun"/>
+        <Class IRI="#BurgerBun"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SmokedCheeseTopping"/>
+        <Class IRI="#CheeseTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SmokedCheeseTopping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpiciness"/>
+            <Class IRI="#Mild"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SmokedPaprikaTopping"/>
+        <Class IRI="#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spiciness"/>
+        <Class IRI="#ValuePartition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpicySauceTopping"/>
+        <Class IRI="#SauceTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SweetPotato"/>
+        <Class IRI="#NamedBurger"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SweetPotato"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#FriedSweetPotatoTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SweetPotato"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#LettuceTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SweetPotato"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#RedOnionTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SweetPotato"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#TomatoTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SweetPotato"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <ObjectUnionOf>
+                <Class IRI="#FriedSweetPotatoTopping"/>
+                <Class IRI="#LettuceTopping"/>
+                <Class IRI="#RedOnionTopping"/>
+                <Class IRI="#TomatoTopping"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TatarSouceTopping"/>
+        <Class IRI="#SauceTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TomatoTopping"/>
+        <Class IRI="#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Triple"/>
+        <Class IRI="#NamedBurger"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Triple"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#GoatCheeseTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Triple"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#LettuceTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Triple"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#MarinatedChickenBreastTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Triple"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#TomatoTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Triple"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <ObjectUnionOf>
+                <Class IRI="#GoatCheeseTopping"/>
+                <Class IRI="#LettuceTopping"/>
+                <Class IRI="#MarinatedChickenBreastTopping"/>
+                <Class IRI="#TomatoTopping"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VegetableTopping"/>
+        <Class IRI="#BurgerTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WhiteOnion"/>
+        <Class IRI="#OnionTopping"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#BBQ"/>
+        <Class IRI="#Badass"/>
+        <Class IRI="#BigBite"/>
+        <Class IRI="#BlackBean"/>
+        <Class IRI="#Butcher"/>
+        <Class IRI="#Cheeseburger"/>
+        <Class IRI="#Chicken"/>
+        <Class IRI="#ClassicCheeseburger"/>
+        <Class IRI="#Colossus"/>
+        <Class IRI="#Demon"/>
+        <Class IRI="#DoubleColossus"/>
+        <Class IRI="#GardenBurger"/>
+        <Class IRI="#Giant"/>
+        <Class IRI="#Homie"/>
+        <Class IRI="#Kocker"/>
+        <Class IRI="#Royal"/>
+        <Class IRI="#Salantos"/>
+        <Class IRI="#SweetPotato"/>
+        <Class IRI="#Triple"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BBQSouceTopping"/>
+        <Class IRI="#KetchupSauceTopping"/>
+        <Class IRI="#MayonnaiseSouceTopping"/>
+        <Class IRI="#MustardSauceTopping"/>
+        <Class IRI="#SpicySauceTopping"/>
+        <Class IRI="#TatarSouceTopping"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BaconTopping"/>
+        <Class IRI="#BeefTopping"/>
+        <Class IRI="#CountrySausageTopping"/>
+        <Class IRI="#MarinatedChickenBreastTopping"/>
+        <Class IRI="#PepperoniSausageTopping"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BeetsTopping"/>
+        <Class IRI="#BlackBeanTopping"/>
+        <Class IRI="#FriedSweetPotatoTopping"/>
+        <Class IRI="#LettuceTopping"/>
+        <Class IRI="#OnionTopping"/>
+        <Class IRI="#PepperTopping"/>
+        <Class IRI="#PickledCucumberTopping"/>
+        <Class IRI="#SmokedPaprikaTopping"/>
+        <Class IRI="#TomatoTopping"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BreadedCheeseTopping"/>
+        <Class IRI="#CheddarTopping"/>
+        <Class IRI="#FetaTopping"/>
+        <Class IRI="#GoatCheeseTopping"/>
+        <Class IRI="#GoudaTopping"/>
+        <Class IRI="#SmokedCheeseTopping"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BreadedCheeseTopping"/>
+        <Class IRI="#CheddarTopping"/>
+        <Class IRI="#GoatCheeseTopping"/>
+        <Class IRI="#GoudaTopping"/>
+        <Class IRI="#SmokedCheeseTopping"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Burger"/>
+        <Class IRI="#BurgerBun"/>
+        <Class IRI="#BurgerTopping"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CheeseTopping"/>
+        <Class IRI="#MeatTopping"/>
+        <Class IRI="#SauceTopping"/>
+        <Class IRI="#VegetableTopping"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DomainThing"/>
+        <Class IRI="#ValuePartition"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#FriedOnionTopping"/>
+        <Class IRI="#RedOnionTopping"/>
+        <Class IRI="#WhiteOnion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Hot"/>
+        <Class IRI="#Medium"/>
+        <Class IRI="#Mild"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#NonVegetarianBurger"/>
+        <Class IRI="#VegetarianBurger"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#PotatoBun"/>
+        <Class IRI="#SesameSeedBun"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBun"/>
+        <ObjectProperty IRI="#hasIngredient"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTopping"/>
+        <ObjectProperty IRI="#hasIngredient"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isBunOf"/>
+        <ObjectProperty IRI="#isIngredientOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isToppingOf"/>
+        <ObjectProperty IRI="#isIngredientOf"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasBun"/>
+        <ObjectProperty IRI="#isBunOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <ObjectProperty IRI="#isIngredientOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasTopping"/>
+        <ObjectProperty IRI="#isToppingOf"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasBun"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasSpiciness"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isToppingOf"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#hasBun"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#hasTopping"/>
+    </InverseFunctionalObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasIngredient"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isIngredientOf"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBun"/>
+        <Class IRI="#Burger"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <Class IRI="#Food"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTopping"/>
+        <Class IRI="#Burger"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBun"/>
+        <Class IRI="#BurgerBun"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <Class IRI="#Food"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSpiciness"/>
+        <Class IRI="#Spiciness"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTopping"/>
+        <Class IRI="#BurgerTopping"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BBQ</IRI>
+        <Literal xml:lang="en">BBQ</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BBQSouceTopping</IRI>
+        <Literal xml:lang="en">BBQSouceTopping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BaconTopping</IRI>
+        <Literal xml:lang="en">BaconTopping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Badass</IRI>
+        <Literal xml:lang="en">Badass</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BeefTopping</IRI>
+        <Literal xml:lang="en">BeefTopping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#BeetsTopping</IRI>
+        <Literal xml:lang="en">BeetsTopping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BigBite</IRI>
+        <Literal xml:lang="en">BigBite</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BlackBean</IRI>
+        <Literal xml:lang="en">BlackBeanVege</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#BlackBeanTopping</IRI>
+        <Literal xml:lang="en">BlackBeanTopping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BreadedCheeseTopping</IRI>
+        <Literal xml:lang="en">BreadedCheeseTopping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Burger</IRI>
+        <Literal xml:lang="en">Burger</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Burger</IRI>
+        <IRI>https://en.wikipedia.org/wiki/Cheeseburger</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Burger</IRI>
+        <IRI>https://en.wikipedia.org/wiki/Hamburger</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Burger</IRI>
+        <IRI>https://en.wikipedia.org/wiki/Veggie_burger</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BurgerBun</IRI>
+        <Literal xml:lang="en">BurgerBun</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#BurgerTopping</IRI>
+        <Literal xml:lang="en">BurgerTopping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Butcher</IRI>
+        <Literal xml:lang="en">Butcher</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CheddarTopping</IRI>
+        <Literal xml:lang="en">CheddarTopping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CheeseTopping</IRI>
+        <Literal xml:lang="en">CheeseTopping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Cheeseburger</IRI>
+        <Literal xml:lang="en">Cheeseburger</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CheesyBurger</IRI>
+        <Literal xml:lang="en">CheesyBurger</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#CheesyBurger</IRI>
+        <Literal xml:lang="en">Any burger that has at least one cheese topping.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Chicken</IRI>
+        <Literal xml:lang="en">Chicken</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ClassicCheeseburger</IRI>
+        <Literal xml:lang="en">ClassicCheeseburger</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Colossus</IRI>
+        <Literal xml:lang="en">Colossus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CountrySausageTopping</IRI>
+        <Literal xml:lang="en">CountrySausageTopping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Demon</IRI>
+        <Literal xml:lang="en">Demon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DomainThing</IRI>
+        <Literal xml:lang="en">DomainThing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DoubleColossus</IRI>
+        <Literal xml:lang="en">DoubleColossus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#FetaTopping</IRI>
+        <Literal xml:lang="en">FetaTopping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Food</IRI>
+        <Literal xml:lang="en">Food</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FriedOnionTopping</IRI>
+        <Literal xml:lang="en">FriedOnionTopping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#FriedSweetPotatoTopping</IRI>
+        <Literal xml:lang="en">FriedSweetPotatoTopping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GardenBurger</IRI>
+        <Literal xml:lang="en">GardenBurger</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Giant</IRI>
+        <Literal xml:lang="en">Giant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GoatCheeseTopping</IRI>
+        <Literal xml:lang="en">GoatCheeseTopping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GoudaTopping</IRI>
+        <Literal xml:lang="en">GoudaTopping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Homie</IRI>
+        <Literal xml:lang="en">Homie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hot</IRI>
+        <Literal xml:lang="en">Hot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#JalapenoPepperTopping</IRI>
+        <Literal xml:lang="en">JalapenoPepperTopping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#KetchupSauceTopping</IRI>
+        <Literal xml:lang="en">KetchupSauceTopping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Kocker</IRI>
+        <Literal xml:lang="en">Kocker</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#LettuceTopping</IRI>
+        <Literal xml:lang="en">LettuceTopping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MarinatedChickenBreastTopping</IRI>
+        <Literal xml:lang="en">MarinatedChickenBreastTopping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MayonnaiseSouceTopping</IRI>
+        <Literal xml:lang="en">MayonnaiseSouceTopping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#MeatTopping</IRI>
+        <Literal xml:lang="en">MeatTopping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MeatyBurger</IRI>
+        <Literal xml:lang="en">MeatyBurger</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#MeatyBurger</IRI>
+        <Literal xml:lang="en">Any burger that has at least one meat topping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Medium</IRI>
+        <Literal xml:lang="en">Medium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Mild</IRI>
+        <Literal xml:lang="en">Mild</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MustardSauceTopping</IRI>
+        <Literal xml:lang="en">MustardSauceTopping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NamedBurger</IRI>
+        <Literal xml:lang="en">A burger that can be found on a burger menu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NamedBurger</IRI>
+        <Literal xml:lang="en">NamedBurger</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NonVegetarianBurger</IRI>
+        <Literal xml:lang="en">NonVegetarianBurger</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#NonVegetarianBurger</IRI>
+        <Literal xml:lang="en">Any burger that is not a VegetarianBurger</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#OnionTopping</IRI>
+        <Literal xml:lang="en">OnionTopping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#PepperTopping</IRI>
+        <Literal xml:lang="en">PepperTopping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PepperoniSausageTopping</IRI>
+        <Literal xml:lang="en">PepperoniSausageTopping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PickledCucumberTopping</IRI>
+        <Literal xml:lang="en">PickledCucumberTopping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PotatoBun</IRI>
+        <Literal xml:lang="en">PotatoBun</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RedOnionTopping</IRI>
+        <Literal xml:lang="en">RedOnionTopping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Royal</IRI>
+        <Literal xml:lang="en">Royal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Salantos</IRI>
+        <Literal xml:lang="en">SalantosVege</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SauceTopping</IRI>
+        <Literal xml:lang="en">SauceTopping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SesameSeedBun</IRI>
+        <Literal xml:lang="en">SesameSeedBun</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SmokedCheeseTopping</IRI>
+        <Literal xml:lang="en">SmokedCheeseTopping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#SmokedPaprikaTopping</IRI>
+        <Literal xml:lang="en">SmokedPaprikaTopping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Spiciness</IRI>
+        <Literal xml:lang="en">Spiciness</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SpicyBurger</IRI>
+        <Literal xml:lang="en">SpicyBurger</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#SpicyBurger</IRI>
+        <Literal xml:lang="en">Any burger that has a spicy topping is a SpicyBurger</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SpicySauceTopping</IRI>
+        <Literal xml:lang="en">SpicySauceTopping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SpicyTopping</IRI>
+        <Literal xml:lang="en">SpicyTopping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#SpicyTopping</IRI>
+        <Literal xml:lang="en">Any burger topping that has spiciness Hot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SweetPotato</IRI>
+        <Literal xml:lang="en">SweetPotato</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TatarSouceTopping</IRI>
+        <Literal xml:lang="en">TatarSauceTopping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TomatoTopping</IRI>
+        <Literal xml:lang="en">TomatoTopping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Triple</IRI>
+        <Literal xml:lang="en">Goaty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ValuePartition</IRI>
+        <Literal xml:lang="en">ValuePartition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VegetableTopping</IRI>
+        <Literal xml:lang="en">VegetableTopping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VegetarianBurger</IRI>
+        <Literal xml:lang="en">VegetarianBurger</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#VegetarianBurger</IRI>
+        <Literal xml:lang="en">Any burgers that does not have Meat Topping is a VegetarianBurger</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VegetarianTopping</IRI>
+        <Literal xml:lang="en">VegetarianTopping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#VegetarianTopping</IRI>
+        <Literal xml:lang="en">VegetarianTopping is equivalent to the union of all toppings in the given axiom. It can be only Vegetable or Cheese.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#WhiteOnion</IRI>
+        <Literal xml:lang="en">WhiteOnionTopping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasIngredient</IRI>
+        <Literal xml:lang="en">Transitive
+* The ingreduents of ingredients are ingredients of the whole</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSpiciness</IRI>
+        <Literal xml:lang="en">A property created to be used with the ValuePartition - Spiciness.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTopping</IRI>
+        <Literal xml:lang="en">Characteristic is inverse functional because isToppingOf is functional</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isIngredientOf</IRI>
+        <Literal xml:lang="en">The inverse property tree to hasIngredient</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
