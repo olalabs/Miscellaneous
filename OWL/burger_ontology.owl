@@ -547,17 +547,6 @@
         <Class IRI="#VegetableTopping"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#BeetsTopping"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasTopping"/>
-            <ObjectUnionOf>
-                <Class IRI="#LettuceTopping"/>
-                <Class IRI="#MarinatedChickenBreastTopping"/>
-                <Class IRI="#TomatoTopping"/>
-            </ObjectUnionOf>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#BigBite"/>
         <Class IRI="#NamedBurger"/>
     </SubClassOf>
@@ -1557,6 +1546,13 @@
     <SubClassOf>
         <Class IRI="#SpicySauceTopping"/>
         <Class IRI="#SauceTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpicySauceTopping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpiciness"/>
+            <Class IRI="#Hot"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SweetPotato"/>
