@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.burger.com/mariola/semanticweb/ontology/2020/burger">
-    <Prefix name="" IRI="http://www.burger.com/mariola/ontologies/2020/5/burger#"/>
+    <Prefix name="" IRI="http://www.burger.com/mariola/semanticweb/ontology/2020/burger"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -90,6 +90,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Colossus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Country"/>
     </Declaration>
     <Declaration>
         <Class IRI="#CountrySausageTopping"/>
@@ -251,6 +254,9 @@
         <ObjectProperty IRI="#hasBun"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasCountryOfOrigin"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasIngredient"/>
     </Declaration>
     <Declaration>
@@ -267,6 +273,24 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isToppingOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#America"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Australia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Denmark"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Greece"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sweden"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wales"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
@@ -294,6 +318,20 @@
                 <ObjectProperty IRI="#hasTopping"/>
                 <Class IRI="#BurgerTopping"/>
             </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Country"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#DomainThing"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#America"/>
+                <NamedIndividual IRI="#Australia"/>
+                <NamedIndividual IRI="#Denmark"/>
+                <NamedIndividual IRI="#Greece"/>
+                <NamedIndividual IRI="#Sweden"/>
+                <NamedIndividual IRI="#Wales"/>
+            </ObjectOneOf>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -1059,6 +1097,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#FetaTopping"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasCountryOfOrigin"/>
+            <NamedIndividual IRI="#Greece"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Food"/>
         <Class IRI="#DomainThing"/>
     </SubClassOf>
@@ -1712,6 +1757,69 @@
         <Class IRI="#PotatoBun"/>
         <Class IRI="#SesameSeedBun"/>
     </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#America"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#America"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Australia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#Australia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Denmark"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#Denmark"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Sweden"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#Sweden"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Wales"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#Wales"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#America"/>
+        <NamedIndividual IRI="#Australia"/>
+        <NamedIndividual IRI="#Denmark"/>
+        <NamedIndividual IRI="#Greece"/>
+        <NamedIndividual IRI="#Sweden"/>
+        <NamedIndividual IRI="#Wales"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#America"/>
+        <NamedIndividual IRI="#Australia"/>
+        <NamedIndividual IRI="#Denmark"/>
+        <NamedIndividual IRI="#Sweden"/>
+        <NamedIndividual IRI="#Wales"/>
+    </DifferentIndividuals>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasBun"/>
         <ObjectProperty IRI="#hasIngredient"/>
@@ -1913,6 +2021,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Colossus</IRI>
         <Literal xml:lang="en">Colossus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Country</IRI>
+        <Literal xml:lang="en">Country</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
