@@ -75,6 +75,9 @@
         <Class IRI="#EnterobacterCloacae"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#EnterobacteriaceaeFamilyBacteria"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#EnterococcusFaecalis"/>
     </Declaration>
     <Declaration>
@@ -132,6 +135,9 @@
         <Class IRI="#NeisseriaMeningitidis"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#NeisseriaceaeFamilyBacteria"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#NocardiaAsteroides"/>
     </Declaration>
     <Declaration>
@@ -145,6 +151,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#OxygenRespiration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PeptococcaceaeFamilyBacteria"/>
     </Declaration>
     <Declaration>
         <Class IRI="#PeptococcusMagnus"/>
@@ -171,10 +180,16 @@
         <Class IRI="#ShigellaSonnei"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#StaphylococcaceaeFamilyBacteria"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#StaphylococcusAureus"/>
     </Declaration>
     <Declaration>
         <Class IRI="#StaphylococcusEpidermidis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StreptococcaceaeFamilyBacteria"/>
     </Declaration>
     <Declaration>
         <Class IRI="#StreptococcusAgalactiae"/>
@@ -224,6 +239,115 @@
     <Declaration>
         <ObjectProperty IRI="#isSpecyficCharacteristicOf"/>
     </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#EnterobacteriaceaeFamilyBacteria"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Bacteria"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasRespiration"/>
+                <Class IRI="#RelativelyAnaerobicRespiration"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasShape"/>
+                <Class IRI="#RodShape"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
+                <Class IRI="#FermentableCharacteristic"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
+                <Class IRI="#NonEndosporulatingCharacterictic"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasStaining"/>
+                <Class IRI="#GramNegative"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#NeisseriaceaeFamilyBacteria"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Bacteria"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasRespiration"/>
+                <Class IRI="#OxygenRespiration"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasShape"/>
+                <Class IRI="#GranulomaShape"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
+                <Class IRI="#NonEndosporulatingCharacterictic"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasStaining"/>
+                <Class IRI="#GramNegative"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PeptococcaceaeFamilyBacteria"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Bacteria"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasRespiration"/>
+                <Class IRI="#AnaerobicRespiration"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasShape"/>
+                <Class IRI="#GranulomaShape"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
+                <Class IRI="#NonEndosporulatingCharacterictic"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasStaining"/>
+                <Class IRI="#GramPositive"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#StaphylococcaceaeFamilyBacteria"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Bacteria"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasShape"/>
+                <Class IRI="#GranulomaShape"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
+                <Class IRI="#CatalasePositiveCharacteristic"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasStaining"/>
+                <Class IRI="#GramPositive"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#StreptococcaceaeFamilyBacteria"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Bacteria"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
+                <Class IRI="#CatalaseNegativeCharacteristic"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
+                <Class IRI="#NonEndosporulatingCharacterictic"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasStaining"/>
+                <Class IRI="#GramPositive"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#AcinetobacterBaumanni"/>
         <Class IRI="#NamedBacteria"/>
@@ -487,9 +611,27 @@
     <SubClassOf>
         <Class IRI="#EnterobacterCloacae"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
+            <Class IRI="#FermentableCharacteristic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnterobacterCloacae"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
+            <Class IRI="#NonEndosporulatingCharacterictic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnterobacterCloacae"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasStaining"/>
             <Class IRI="#GramNegative"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnterobacteriaceaeFamilyBacteria"/>
+        <Class IRI="#Bacteria"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#EnterococcusFaecalis"/>
@@ -514,6 +656,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
             <Class IRI="#CatalaseNegativeCharacteristic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnterococcusFaecalis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
+            <Class IRI="#NonEndosporulatingCharacterictic"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -546,6 +695,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
             <Class IRI="#CatalaseNegativeCharacteristic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnterococcusFaecium"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
+            <Class IRI="#NonEndosporulatingCharacterictic"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -571,6 +727,20 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasShape"/>
             <Class IRI="#RodShape"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EscherichiaColi"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
+            <Class IRI="#FermentableCharacteristic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EscherichiaColi"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
+            <Class IRI="#NonEndosporulatingCharacterictic"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -763,6 +933,20 @@
     <SubClassOf>
         <Class IRI="#KlebsiellaPneumoniae"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
+            <Class IRI="#FermentableCharacteristic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KlebsiellaPneumoniae"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
+            <Class IRI="#NonEndosporulatingCharacterictic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KlebsiellaPneumoniae"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasStaining"/>
             <Class IRI="#GramNegative"/>
         </ObjectSomeValuesFrom>
@@ -888,6 +1072,13 @@
     <SubClassOf>
         <Class IRI="#NeisseriaGonorrhoeae"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
+            <Class IRI="#NonEndosporulatingCharacterictic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NeisseriaGonorrhoeae"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasStaining"/>
             <Class IRI="#GramNegative"/>
         </ObjectSomeValuesFrom>
@@ -913,9 +1104,20 @@
     <SubClassOf>
         <Class IRI="#NeisseriaMeningitidis"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
+            <Class IRI="#NonEndosporulatingCharacterictic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NeisseriaMeningitidis"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasStaining"/>
             <Class IRI="#GramNegative"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NeisseriaceaeFamilyBacteria"/>
+        <Class IRI="#Bacteria"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#NocardiaAsteroides"/>
@@ -966,6 +1168,10 @@
         <Class IRI="#BacteriaRespiration"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#PeptococcaceaeFamilyBacteria"/>
+        <Class IRI="#Bacteria"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#PeptococcusMagnus"/>
         <Class IRI="#NamedBacteria"/>
     </SubClassOf>
@@ -981,6 +1187,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasShape"/>
             <Class IRI="#GranulomaShape"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PeptococcusMagnus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
+            <Class IRI="#NonEndosporulatingCharacterictic"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1011,6 +1224,13 @@
     <SubClassOf>
         <Class IRI="#PeptococcusNiger"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
+            <Class IRI="#NonEndosporulatingCharacterictic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PeptococcusNiger"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasStaining"/>
             <Class IRI="#GramPositive"/>
         </ObjectSomeValuesFrom>
@@ -1031,6 +1251,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasShape"/>
             <Class IRI="#GranulomaShape"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PeptococcusPrevotti"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
+            <Class IRI="#NonEndosporulatingCharacterictic"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1101,6 +1328,20 @@
     <SubClassOf>
         <Class IRI="#SalmonellaTyphi"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
+            <Class IRI="#FermentableCharacteristic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SalmonellaTyphi"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
+            <Class IRI="#NonEndosporulatingCharacterictic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SalmonellaTyphi"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasStaining"/>
             <Class IRI="#GramNegative"/>
         </ObjectSomeValuesFrom>
@@ -1126,9 +1367,27 @@
     <SubClassOf>
         <Class IRI="#ShigellaSonnei"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
+            <Class IRI="#FermentableCharacteristic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShigellaSonnei"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
+            <Class IRI="#NonEndosporulatingCharacterictic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShigellaSonnei"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasStaining"/>
             <Class IRI="#GramNegative"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StaphylococcaceaeFamilyBacteria"/>
+        <Class IRI="#Bacteria"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#StaphylococcusAureus"/>
@@ -1146,6 +1405,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasShape"/>
             <Class IRI="#GranulomaShape"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StaphylococcusAureus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
+            <Class IRI="#CatalasePositiveCharacteristic"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1184,6 +1450,13 @@
         <Class IRI="#StaphylococcusEpidermidis"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
+            <Class IRI="#CatalasePositiveCharacteristic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StaphylococcusEpidermidis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
             <Class IRI="#CoagulazoNegativeCharacteristic"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -1195,6 +1468,10 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#StreptococcaceaeFamilyBacteria"/>
+        <Class IRI="#Bacteria"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#StreptococcusAgalactiae"/>
         <Class IRI="#NamedBacteria"/>
     </SubClassOf>
@@ -1229,6 +1506,13 @@
     <SubClassOf>
         <Class IRI="#StreptococcusAgalactiae"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
+            <Class IRI="#NonEndosporulatingCharacterictic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreptococcusAgalactiae"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasStaining"/>
             <Class IRI="#GramPositive"/>
         </ObjectSomeValuesFrom>
@@ -1268,6 +1552,13 @@
     <SubClassOf>
         <Class IRI="#StreptococcusMutans"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
+            <Class IRI="#NonEndosporulatingCharacterictic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreptococcusMutans"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasStaining"/>
             <Class IRI="#GramPositive"/>
         </ObjectSomeValuesFrom>
@@ -1302,6 +1593,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
             <Class IRI="#CatalaseNegativeCharacteristic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreptococcusPneumoniae"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
+            <Class IRI="#NonEndosporulatingCharacterictic"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1346,6 +1644,13 @@
     <SubClassOf>
         <Class IRI="#StreptococcusPyogenes"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
+            <Class IRI="#NonEndosporulatingCharacterictic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreptococcusPyogenes"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasStaining"/>
             <Class IRI="#GramPositive"/>
         </ObjectSomeValuesFrom>
@@ -1380,6 +1685,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
             <Class IRI="#CatalaseNegativeCharacteristic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreptococcusSanquis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
+            <Class IRI="#NonEndosporulatingCharacterictic"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1547,6 +1859,31 @@
         <ObjectProperty IRI="#isSpecyficCharacteristicOf"/>
         <ObjectProperty IRI="#isAttributeOf"/>
     </SubObjectPropertyOf>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#EnterobacteriaceaeFamilyBacteria</IRI>
+        <Literal xml:lang="en">Gram-negative rod-shaped intestinal bacteria family, non-endosporulating, fermenting, relatively anaerobic.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#NeisseriaceaeFamilyBacteria</IRI>
+        <Literal xml:lang="en">Gram-negative granuloma-shaped bacteria family nonspore-forming and requiring oxygen.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#PeptococcaceaeFamilyBacteria</IRI>
+        <Literal xml:lang="en">Gram-positive granuloma-shaped bacteria family nonspore-forming and anaerobic.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#StaphylococcaceaeFamilyBacteria</IRI>
+        <Literal xml:lang="en">Gram-positive granuloma-shaped bacteria family nonspore-forming, catalase-positive, that grow in irregular clusters.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#StreptococcaceaeFamilyBacteria</IRI>
+        <Literal xml:lang="en">Gram-positive granuloma-shaped bacteria family nonspore-forming and catalase-negative.</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 
