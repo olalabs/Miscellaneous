@@ -1,0 +1,796 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/mariola/ontologies/2020/5/bacteria_ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/mariola/ontologies/2020/5/bacteria_ontology">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AlphaHemolyticCharacteristic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnaerobicRespiration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnaerococcusPrevotii"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bacteria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BacteriaRespiration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BacteriaShape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BacteriaSpecyficCharacteristic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BacteriaStaining"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BetaHemolyticCharacteristic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CatalaseNegativeCharacteristic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CatalasePositiveCharacteristic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CoagulazoNegativeCharacteristic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CoagulazoPositiveCharacteristic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnterococcusFaecalis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnterococcusFaecium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FinegoldiaMagna"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GramMinus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GramPlus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GranulomaShape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MoraxellaCatarrhalis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NamedBacteria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NeisseriaGonorrhoeae"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NeisseriaMeningitidis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OxygenRespiration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PeptococcusMagnus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PeptococcusNiger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PeptococcusPrevotti"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RelativelyAnaerobicRespiration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RodShape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StaphylococcusAureus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StaphylococcusEpidermidis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StreptococcusAgalactiae"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StreptococcusMutans"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StreptococcusPneumoniae"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StreptococcusPyogenes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StreptococcusSanquis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Veilonella"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRespiration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasShape"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSpecyficProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStaining"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPropertyOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRespirationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isShapeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSpecyficPropertyOf"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AlphaHemolyticCharacteristic"/>
+        <Class IRI="#BacteriaSpecyficCharacteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnaerobicRespiration"/>
+        <Class IRI="#BacteriaRespiration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnaerococcusPrevotii"/>
+        <Class IRI="#NamedBacteria"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnaerococcusPrevotii"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRespiration"/>
+            <Class IRI="#AnaerobicRespiration"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnaerococcusPrevotii"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasShape"/>
+            <Class IRI="#GranulomaShape"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnaerococcusPrevotii"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasStaining"/>
+            <Class IRI="#GramPlus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BetaHemolyticCharacteristic"/>
+        <Class IRI="#BacteriaSpecyficCharacteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CatalaseNegativeCharacteristic"/>
+        <Class IRI="#BacteriaSpecyficCharacteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CatalasePositiveCharacteristic"/>
+        <Class IRI="#BacteriaSpecyficCharacteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CoagulazoNegativeCharacteristic"/>
+        <Class IRI="#BacteriaSpecyficCharacteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CoagulazoPositiveCharacteristic"/>
+        <Class IRI="#BacteriaSpecyficCharacteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnterococcusFaecalis"/>
+        <Class IRI="#NamedBacteria"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnterococcusFaecalis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRespiration"/>
+            <Class IRI="#RelativelyAnaerobicRespiration"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnterococcusFaecalis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasShape"/>
+            <Class IRI="#GranulomaShape"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnterococcusFaecalis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficProperty"/>
+            <Class IRI="#CatalaseNegativeCharacteristic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnterococcusFaecalis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasStaining"/>
+            <Class IRI="#GramPlus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnterococcusFaecium"/>
+        <Class IRI="#NamedBacteria"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnterococcusFaecium"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRespiration"/>
+            <Class IRI="#RelativelyAnaerobicRespiration"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnterococcusFaecium"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasShape"/>
+            <Class IRI="#GranulomaShape"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnterococcusFaecium"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficProperty"/>
+            <Class IRI="#CatalaseNegativeCharacteristic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnterococcusFaecium"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasStaining"/>
+            <Class IRI="#GramPlus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FinegoldiaMagna"/>
+        <Class IRI="#NamedBacteria"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FinegoldiaMagna"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRespiration"/>
+            <Class IRI="#AnaerobicRespiration"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FinegoldiaMagna"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasShape"/>
+            <Class IRI="#GranulomaShape"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FinegoldiaMagna"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasStaining"/>
+            <Class IRI="#GramPlus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GramMinus"/>
+        <Class IRI="#BacteriaStaining"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GramPlus"/>
+        <Class IRI="#BacteriaStaining"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GranulomaShape"/>
+        <Class IRI="#BacteriaShape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MoraxellaCatarrhalis"/>
+        <Class IRI="#NamedBacteria"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MoraxellaCatarrhalis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRespiration"/>
+            <Class IRI="#OxygenRespiration"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MoraxellaCatarrhalis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasShape"/>
+            <Class IRI="#GranulomaShape"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MoraxellaCatarrhalis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficProperty"/>
+            <Class IRI="#CatalasePositiveCharacteristic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MoraxellaCatarrhalis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasStaining"/>
+            <Class IRI="#GramMinus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NamedBacteria"/>
+        <Class IRI="#Bacteria"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NeisseriaGonorrhoeae"/>
+        <Class IRI="#NamedBacteria"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NeisseriaGonorrhoeae"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRespiration"/>
+            <Class IRI="#OxygenRespiration"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NeisseriaGonorrhoeae"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasShape"/>
+            <Class IRI="#GranulomaShape"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NeisseriaGonorrhoeae"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasStaining"/>
+            <Class IRI="#GramMinus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NeisseriaMeningitidis"/>
+        <Class IRI="#NamedBacteria"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NeisseriaMeningitidis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRespiration"/>
+            <Class IRI="#OxygenRespiration"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NeisseriaMeningitidis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasShape"/>
+            <Class IRI="#GranulomaShape"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NeisseriaMeningitidis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasStaining"/>
+            <Class IRI="#GramMinus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OxygenRespiration"/>
+        <Class IRI="#BacteriaRespiration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PeptococcusMagnus"/>
+        <Class IRI="#NamedBacteria"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PeptococcusMagnus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRespiration"/>
+            <Class IRI="#AnaerobicRespiration"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PeptococcusMagnus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasShape"/>
+            <Class IRI="#GranulomaShape"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PeptococcusMagnus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasStaining"/>
+            <Class IRI="#GramPlus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PeptococcusNiger"/>
+        <Class IRI="#NamedBacteria"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PeptococcusNiger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRespiration"/>
+            <Class IRI="#AnaerobicRespiration"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PeptococcusNiger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasShape"/>
+            <Class IRI="#GranulomaShape"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PeptococcusNiger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasStaining"/>
+            <Class IRI="#GramPlus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PeptococcusPrevotti"/>
+        <Class IRI="#NamedBacteria"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PeptococcusPrevotti"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRespiration"/>
+            <Class IRI="#AnaerobicRespiration"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PeptococcusPrevotti"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasShape"/>
+            <Class IRI="#GranulomaShape"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PeptococcusPrevotti"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasStaining"/>
+            <Class IRI="#GramPlus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RelativelyAnaerobicRespiration"/>
+        <Class IRI="#BacteriaRespiration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RodShape"/>
+        <Class IRI="#BacteriaShape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StaphylococcusAureus"/>
+        <Class IRI="#NamedBacteria"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StaphylococcusAureus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRespiration"/>
+            <Class IRI="#OxygenRespiration"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StaphylococcusAureus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasShape"/>
+            <Class IRI="#GranulomaShape"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StaphylococcusAureus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficProperty"/>
+            <Class IRI="#CoagulazoPositiveCharacteristic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StaphylococcusAureus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasStaining"/>
+            <Class IRI="#GramPlus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StaphylococcusEpidermidis"/>
+        <Class IRI="#NamedBacteria"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StaphylococcusEpidermidis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRespiration"/>
+            <Class IRI="#OxygenRespiration"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StaphylococcusEpidermidis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasShape"/>
+            <Class IRI="#GranulomaShape"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StaphylococcusEpidermidis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficProperty"/>
+            <Class IRI="#CoagulazoNegativeCharacteristic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StaphylococcusEpidermidis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasStaining"/>
+            <Class IRI="#GramPlus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreptococcusAgalactiae"/>
+        <Class IRI="#NamedBacteria"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreptococcusAgalactiae"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRespiration"/>
+            <Class IRI="#OxygenRespiration"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreptococcusAgalactiae"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasShape"/>
+            <Class IRI="#GranulomaShape"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreptococcusAgalactiae"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficProperty"/>
+            <Class IRI="#BetaHemolyticCharacteristic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreptococcusAgalactiae"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficProperty"/>
+            <Class IRI="#CatalaseNegativeCharacteristic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreptococcusAgalactiae"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasStaining"/>
+            <Class IRI="#GramPlus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreptococcusMutans"/>
+        <Class IRI="#NamedBacteria"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreptococcusMutans"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRespiration"/>
+            <Class IRI="#OxygenRespiration"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreptococcusMutans"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasShape"/>
+            <Class IRI="#GranulomaShape"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreptococcusMutans"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficProperty"/>
+            <Class IRI="#AlphaHemolyticCharacteristic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreptococcusMutans"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficProperty"/>
+            <Class IRI="#CatalaseNegativeCharacteristic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreptococcusMutans"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasStaining"/>
+            <Class IRI="#GramPlus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreptococcusPneumoniae"/>
+        <Class IRI="#NamedBacteria"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreptococcusPneumoniae"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRespiration"/>
+            <Class IRI="#OxygenRespiration"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreptococcusPneumoniae"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasShape"/>
+            <Class IRI="#GranulomaShape"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreptococcusPneumoniae"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficProperty"/>
+            <Class IRI="#AlphaHemolyticCharacteristic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreptococcusPneumoniae"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficProperty"/>
+            <Class IRI="#CatalaseNegativeCharacteristic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreptococcusPneumoniae"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasStaining"/>
+            <Class IRI="#GramPlus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreptococcusPyogenes"/>
+        <Class IRI="#NamedBacteria"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreptococcusPyogenes"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRespiration"/>
+            <Class IRI="#OxygenRespiration"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreptococcusPyogenes"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasShape"/>
+            <Class IRI="#GranulomaShape"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreptococcusPyogenes"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficProperty"/>
+            <Class IRI="#BetaHemolyticCharacteristic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreptococcusPyogenes"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficProperty"/>
+            <Class IRI="#CatalaseNegativeCharacteristic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreptococcusPyogenes"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasStaining"/>
+            <Class IRI="#GramPlus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreptococcusSanquis"/>
+        <Class IRI="#NamedBacteria"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreptococcusSanquis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRespiration"/>
+            <Class IRI="#OxygenRespiration"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreptococcusSanquis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasShape"/>
+            <Class IRI="#GranulomaShape"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreptococcusSanquis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficProperty"/>
+            <Class IRI="#AlphaHemolyticCharacteristic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreptococcusSanquis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecyficProperty"/>
+            <Class IRI="#CatalaseNegativeCharacteristic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreptococcusSanquis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasStaining"/>
+            <Class IRI="#GramPlus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Veilonella"/>
+        <Class IRI="#NamedBacteria"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Veilonella"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRespiration"/>
+            <Class IRI="#AnaerobicRespiration"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Veilonella"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasShape"/>
+            <Class IRI="#GranulomaShape"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Veilonella"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasStaining"/>
+            <Class IRI="#GramMinus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasRespiration"/>
+        <ObjectProperty IRI="#hasProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasShape"/>
+        <ObjectProperty IRI="#hasProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSpecyficProperty"/>
+        <ObjectProperty IRI="#hasProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasStaining"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isRespirationOf"/>
+        <ObjectProperty IRI="#isPropertyOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isShapeOf"/>
+        <ObjectProperty IRI="#isPropertyOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSpecyficPropertyOf"/>
+        <ObjectProperty IRI="#isPropertyOf"/>
+    </SubObjectPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
