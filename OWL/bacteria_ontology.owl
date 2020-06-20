@@ -55,6 +55,12 @@
         <Class IRI="#BacteriaStaining"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#BacteriaesWithThinCellWall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BacteriesWithBloodRoutAndThinCellWall"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#BacteroidesFragilis"/>
     </Declaration>
     <Declaration>
@@ -187,6 +193,9 @@
         <Class IRI="#RodShape"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#RoutOfInfection"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#SalmonellaTyphi"/>
     </Declaration>
     <Declaration>
@@ -223,13 +232,13 @@
         <Class IRI="#VeilonellaParvula"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#VibrioCholerae"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#hasAttribute"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasRespiration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRoutOfInfection"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasShape"/>
@@ -253,6 +262,129 @@
         <ObjectProperty IRI="#isSpecyficCharacteristicOf"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#hasCellWall"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AcinetobacterBaumaniiIN24532"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AnaerococcusPrevottiIN3433"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BacillusCereusIN4352"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BacteroidesFragilisIN32423"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Blood"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BordatellaPertussisIN43234"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CampyloBacterJejuniIN3324"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ClostridiumDifficileIN3532"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Droplet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EnterobacterCloacaeIN3423"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EnterococcusFaecalisIN3442"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EnterococcusFaeciumIN3432"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EscherichiaColiIN3423"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Food"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HaemophilusInflienzaeIN2343"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HelicobacterPyloriIN7232"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Inhalation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KlebsiellaPneumoniaeIN2223"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MoraxellaCatarrhalisIN34212"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MycobacteriumTuberculosisIN3412"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NeisseriaGonorrhoeaeIN1232"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NeisseriaMeningitidisIN2329"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NocardiaAseroidesIN3472"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PeptococcusMagnusIN4352"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PeptococcusNigerIN43423"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PeptococcusPrevottiIN2345"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PseudomonasAeruginosaIN4352"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SalmonellaTyphiIN3243"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ShigellaSonneiIN3432"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Skin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Soil"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StaphylococcusAureusIN3243"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StaphylococcusEpidermidisIN32532"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StreptococcusAgalactiaeIN3423"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StreptococcusMutansIN342"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StreptococcusPneumoniaeIN32423"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StreptococcusPyogenesIN2412"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StreptococcusSanguisIN3422"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VailonellaParvulaIN3423"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VibrioCholeraeIN3241"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
     </Declaration>
     <Declaration>
@@ -261,6 +393,30 @@
     <Declaration>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
     </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#BacteriaesWithThinCellWall"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Bacteria"/>
+            <DataHasValue>
+                <DataProperty IRI="#hasCellWall"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#BacteriesWithBloodRoutAndThinCellWall"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Bacteria"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasRoutOfInfection"/>
+                <NamedIndividual IRI="#Blood"/>
+            </ObjectHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#hasCellWall"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#EnterobacteriaceaeFamilyBacteria"/>
         <ObjectIntersectionOf>
@@ -400,6 +556,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#AcinetobacterBaumanni"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasRoutOfInfection"/>
+            <NamedIndividual IRI="#Blood"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#AlphaHemolyticCharacteristic"/>
         <Class IRI="#BacteriaSpecyficCharacteristic"/>
     </SubClassOf>
@@ -431,6 +594,13 @@
             <ObjectProperty IRI="#hasStaining"/>
             <Class IRI="#GramPositive"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnaerococcusPrevotii"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasRoutOfInfection"/>
+            <NamedIndividual IRI="#Inhalation"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#BacillusCereus"/>
@@ -465,6 +635,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#BacillusCereus"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasRoutOfInfection"/>
+            <NamedIndividual IRI="#Blood"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#BacteroidesFragilis"/>
         <Class IRI="#NamedBacteria"/>
     </SubClassOf>
@@ -488,6 +665,13 @@
             <ObjectProperty IRI="#hasStaining"/>
             <Class IRI="#GramNegative"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BacteroidesFragilis"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasRoutOfInfection"/>
+            <NamedIndividual IRI="#Inhalation"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#BetaHemolyticCharacteristic"/>
@@ -517,6 +701,13 @@
             <ObjectProperty IRI="#hasStaining"/>
             <Class IRI="#GramNegative"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BordatellaPertussis"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasRoutOfInfection"/>
+            <NamedIndividual IRI="#Inhalation"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CampylobacterJejuni"/>
@@ -558,6 +749,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#CampylobacterJejuni"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasRoutOfInfection"/>
+            <NamedIndividual IRI="#Food"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#CatalaseNegativeCharacteristic"/>
         <Class IRI="#BacteriaSpecyficCharacteristic"/>
     </SubClassOf>
@@ -596,6 +794,13 @@
             <ObjectProperty IRI="#hasStaining"/>
             <Class IRI="#GramPositive"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClostridiumDifficile"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasRoutOfInfection"/>
+            <NamedIndividual IRI="#Food"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CoagulazoNegativeCharacteristic"/>
@@ -649,6 +854,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#EnterobacterCloacae"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasRoutOfInfection"/>
+            <NamedIndividual IRI="#Blood"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#EnterobacteriaceaeFamilyBacteria"/>
         <Class IRI="#Bacteria"/>
     </SubClassOf>
@@ -692,6 +904,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#EnterococcusFaecalis"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasRoutOfInfection"/>
+            <NamedIndividual IRI="#Blood"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#EnterococcusFaecium"/>
         <Class IRI="#NamedBacteria"/>
     </SubClassOf>
@@ -729,6 +948,13 @@
             <ObjectProperty IRI="#hasStaining"/>
             <Class IRI="#GramPositive"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnterococcusFaecium"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasRoutOfInfection"/>
+            <NamedIndividual IRI="#Blood"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#EscherichiaColi"/>
@@ -770,6 +996,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#EscherichiaColi"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasRoutOfInfection"/>
+            <NamedIndividual IRI="#Food"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#FermentableCharacteristic"/>
         <Class IRI="#BacteriaSpecyficCharacteristic"/>
     </SubClassOf>
@@ -799,6 +1032,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#FinegoldiaMagna"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasRoutOfInfection"/>
+            <NamedIndividual IRI="#Inhalation"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#FusobacteriumNucleatum"/>
         <Class IRI="#NamedBacteria"/>
     </SubClassOf>
@@ -822,6 +1062,13 @@
             <ObjectProperty IRI="#hasStaining"/>
             <Class IRI="#GramNegative"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FusobacteriumNucleatum"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasRoutOfInfection"/>
+            <NamedIndividual IRI="#Blood"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#GardenellaVaginalis"/>
@@ -854,6 +1101,13 @@
             <ObjectProperty IRI="#hasStaining"/>
             <Class IRI="#GramPositive"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GardenellaVaginalis"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasRoutOfInfection"/>
+            <NamedIndividual IRI="#Blood"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#GramNegative"/>
@@ -891,6 +1145,13 @@
             <ObjectProperty IRI="#hasStaining"/>
             <Class IRI="#GramNegative"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HaemophilusInfuenzae"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasRoutOfInfection"/>
+            <NamedIndividual IRI="#Droplet"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HelicobacterPylori"/>
@@ -932,6 +1193,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#HelicobacterPylori"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasRoutOfInfection"/>
+            <NamedIndividual IRI="#Food"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#KlebsiellaPneumoniae"/>
         <Class IRI="#NamedBacteria"/>
     </SubClassOf>
@@ -971,6 +1239,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#KlebsiellaPneumoniae"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasRoutOfInfection"/>
+            <NamedIndividual IRI="#Blood"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ListeriaMonocytogenes"/>
         <Class IRI="#NamedBacteria"/>
     </SubClassOf>
@@ -1001,6 +1276,13 @@
             <ObjectProperty IRI="#hasStaining"/>
             <Class IRI="#GramPositive"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ListeriaMonocytogenes"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasRoutOfInfection"/>
+            <NamedIndividual IRI="#Food"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MoraxellaCatarrhalis"/>
@@ -1035,6 +1317,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#MoraxellaCatarrhalis"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasRoutOfInfection"/>
+            <NamedIndividual IRI="#Droplet"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#MycobacteriumTuberculosis"/>
         <Class IRI="#NamedBacteria"/>
     </SubClassOf>
@@ -1065,6 +1354,13 @@
             <ObjectProperty IRI="#hasStaining"/>
             <Class IRI="#GramPositive"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MycobacteriumTuberculosis"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasRoutOfInfection"/>
+            <NamedIndividual IRI="#Droplet"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#NamedBacteria"/>
@@ -1103,6 +1399,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#NeisseriaGonorrhoeae"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasRoutOfInfection"/>
+            <NamedIndividual IRI="#Blood"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#NeisseriaMeningitidis"/>
         <Class IRI="#NamedBacteria"/>
     </SubClassOf>
@@ -1133,6 +1436,13 @@
             <ObjectProperty IRI="#hasStaining"/>
             <Class IRI="#GramNegative"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NeisseriaMeningitidis"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasRoutOfInfection"/>
+            <NamedIndividual IRI="#Blood"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#NeisseriaceaeFamilyBacteria"/>
@@ -1169,6 +1479,13 @@
             <ObjectProperty IRI="#hasStaining"/>
             <Class IRI="#GramPositive"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NocardiaAsteroides"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasRoutOfInfection"/>
+            <NamedIndividual IRI="#Blood"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#NonEndosporulatingCharacteristic"/>
@@ -1223,6 +1540,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#PeptococcusMagnus"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasRoutOfInfection"/>
+            <NamedIndividual IRI="#Blood"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#PeptococcusNiger"/>
         <Class IRI="#NamedBacteria"/>
     </SubClassOf>
@@ -1255,6 +1579,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#PeptococcusNiger"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasRoutOfInfection"/>
+            <NamedIndividual IRI="#Blood"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#PeptococcusPrevotti"/>
         <Class IRI="#NamedBacteria"/>
     </SubClassOf>
@@ -1285,6 +1616,13 @@
             <ObjectProperty IRI="#hasStaining"/>
             <Class IRI="#GramPositive"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PeptococcusPrevotti"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasRoutOfInfection"/>
+            <NamedIndividual IRI="#Soil"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PseudomonasAeruginosa"/>
@@ -1317,6 +1655,13 @@
             <ObjectProperty IRI="#hasStaining"/>
             <Class IRI="#GramNegative"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PseudomonasAeruginosa"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasRoutOfInfection"/>
+            <NamedIndividual IRI="#Droplet"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#RelativelyAnaerobicRespiration"/>
@@ -1366,6 +1711,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#SalmonellaTyphi"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasRoutOfInfection"/>
+            <NamedIndividual IRI="#Food"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ShigellaSonnei"/>
         <Class IRI="#NamedBacteria"/>
     </SubClassOf>
@@ -1403,6 +1755,13 @@
             <ObjectProperty IRI="#hasStaining"/>
             <Class IRI="#GramNegative"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShigellaSonnei"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasRoutOfInfection"/>
+            <NamedIndividual IRI="#Food"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#StaphylococcaceaeFamilyBacteria"/>
@@ -1448,6 +1807,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#StaphylococcusAureus"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasRoutOfInfection"/>
+            <NamedIndividual IRI="#Blood"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#StaphylococcusEpidermidis"/>
         <Class IRI="#NamedBacteria"/>
     </SubClassOf>
@@ -1485,6 +1851,13 @@
             <ObjectProperty IRI="#hasStaining"/>
             <Class IRI="#GramPositive"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StaphylococcusEpidermidis"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasRoutOfInfection"/>
+            <NamedIndividual IRI="#Skin"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#StreptococcaceaeFamilyBacteria"/>
@@ -1537,6 +1910,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#StreptococcusAgalactiae"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasRoutOfInfection"/>
+            <NamedIndividual IRI="#Droplet"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#StreptococcusMutans"/>
         <Class IRI="#NamedBacteria"/>
     </SubClassOf>
@@ -1583,6 +1963,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#StreptococcusMutans"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasRoutOfInfection"/>
+            <NamedIndividual IRI="#Food"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#StreptococcusPneumoniae"/>
         <Class IRI="#NamedBacteria"/>
     </SubClassOf>
@@ -1627,6 +2014,13 @@
             <ObjectProperty IRI="#hasStaining"/>
             <Class IRI="#GramPositive"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreptococcusPneumoniae"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasRoutOfInfection"/>
+            <NamedIndividual IRI="#Droplet"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#StreptococcusPyogenes"/>
@@ -1675,6 +2069,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#StreptococcusPyogenes"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasRoutOfInfection"/>
+            <NamedIndividual IRI="#Inhalation"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#StreptococcusSanquis"/>
         <Class IRI="#NamedBacteria"/>
     </SubClassOf>
@@ -1721,6 +2122,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#StreptococcusSanquis"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasRoutOfInfection"/>
+            <NamedIndividual IRI="#Inhalation"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#VeilonellaParvula"/>
         <Class IRI="#NamedBacteria"/>
     </SubClassOf>
@@ -1746,84 +2154,12 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#VibrioCholerae"/>
-        <Class IRI="#NamedBacteria"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#VibrioCholerae"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasRespiration"/>
-            <Class IRI="#RelativelyAnaerobicRespiration"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#VibrioCholerae"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasShape"/>
-            <Class IRI="#RodShape"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#VibrioCholerae"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
-            <Class IRI="#FermentableCharacteristic"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#VibrioCholerae"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
-            <Class IRI="#OxidasePositiveCharacteristic"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#VibrioCholerae"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasStaining"/>
-            <Class IRI="#GramNegative"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <DisjointClasses>
-        <Class IRI="#AcinetobacterBaumanni"/>
-        <Class IRI="#AnaerococcusPrevotii"/>
-        <Class IRI="#BacillusCereus"/>
-        <Class IRI="#BacteroidesFragilis"/>
-        <Class IRI="#BordatellaPertussis"/>
-        <Class IRI="#CampylobacterJejuni"/>
-        <Class IRI="#ClostridiumDifficile"/>
-        <Class IRI="#EnterobacterCloacae"/>
-        <Class IRI="#EnterococcusFaecalis"/>
-        <Class IRI="#EnterococcusFaecium"/>
-        <Class IRI="#EscherichiaColi"/>
-        <Class IRI="#FinegoldiaMagna"/>
-        <Class IRI="#FusobacteriumNucleatum"/>
-        <Class IRI="#GardenellaVaginalis"/>
-        <Class IRI="#HaemophilusInfuenzae"/>
-        <Class IRI="#HelicobacterPylori"/>
-        <Class IRI="#KlebsiellaPneumoniae"/>
-        <Class IRI="#ListeriaMonocytogenes"/>
-        <Class IRI="#MoraxellaCatarrhalis"/>
-        <Class IRI="#MycobacteriumTuberculosis"/>
-        <Class IRI="#NeisseriaGonorrhoeae"/>
-        <Class IRI="#NeisseriaMeningitidis"/>
-        <Class IRI="#NocardiaAsteroides"/>
-        <Class IRI="#PeptococcusMagnus"/>
-        <Class IRI="#PeptococcusNiger"/>
-        <Class IRI="#PeptococcusPrevotti"/>
-        <Class IRI="#PseudomonasAeruginosa"/>
-        <Class IRI="#SalmonellaTyphi"/>
-        <Class IRI="#ShigellaSonnei"/>
-        <Class IRI="#StaphylococcusAureus"/>
-        <Class IRI="#StaphylococcusEpidermidis"/>
-        <Class IRI="#StreptococcusAgalactiae"/>
-        <Class IRI="#StreptococcusMutans"/>
-        <Class IRI="#StreptococcusPneumoniae"/>
-        <Class IRI="#StreptococcusPyogenes"/>
-        <Class IRI="#StreptococcusSanquis"/>
         <Class IRI="#VeilonellaParvula"/>
-        <Class IRI="#VibrioCholerae"/>
-    </DisjointClasses>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasRoutOfInfection"/>
+            <NamedIndividual IRI="#Blood"/>
+        </ObjectHasValue>
+    </SubClassOf>
     <DisjointClasses>
         <Class IRI="#AlphaHemolyticCharacteristic"/>
         <Class IRI="#BetaHemolyticCharacteristic"/>
@@ -1843,6 +2179,14 @@
         <Class IRI="#RelativelyAnaerobicRespiration"/>
     </DisjointClasses>
     <DisjointClasses>
+        <Class IRI="#Bacteria"/>
+        <Class IRI="#BacteriaRespiration"/>
+        <Class IRI="#BacteriaShape"/>
+        <Class IRI="#BacteriaSpecyficCharacteristic"/>
+        <Class IRI="#BacteriaStaining"/>
+        <Class IRI="#RoutOfInfection"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#GramNegative"/>
         <Class IRI="#GramPositive"/>
     </DisjointClasses>
@@ -1850,6 +2194,332 @@
         <Class IRI="#GranulomaShape"/>
         <Class IRI="#RodShape"/>
     </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#AcinetobacterBaumanni"/>
+        <NamedIndividual IRI="#AcinetobacterBaumaniiIN24532"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AnaerococcusPrevotii"/>
+        <NamedIndividual IRI="#AnaerococcusPrevottiIN3433"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BacillusCereus"/>
+        <NamedIndividual IRI="#BacillusCereusIN4352"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BacteroidesFragilis"/>
+        <NamedIndividual IRI="#BacteroidesFragilisIN32423"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RoutOfInfection"/>
+        <NamedIndividual IRI="#Blood"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BordatellaPertussis"/>
+        <NamedIndividual IRI="#BordatellaPertussisIN43234"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CampylobacterJejuni"/>
+        <NamedIndividual IRI="#CampyloBacterJejuniIN3324"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ClostridiumDifficile"/>
+        <NamedIndividual IRI="#ClostridiumDifficileIN3532"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RoutOfInfection"/>
+        <NamedIndividual IRI="#Droplet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EnterobacterCloacae"/>
+        <NamedIndividual IRI="#EnterobacterCloacaeIN3423"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EnterococcusFaecalis"/>
+        <NamedIndividual IRI="#EnterococcusFaecalisIN3442"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EnterococcusFaecium"/>
+        <NamedIndividual IRI="#EnterococcusFaeciumIN3432"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EscherichiaColi"/>
+        <NamedIndividual IRI="#EscherichiaColiIN3423"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RoutOfInfection"/>
+        <NamedIndividual IRI="#Food"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HaemophilusInfuenzae"/>
+        <NamedIndividual IRI="#HaemophilusInflienzaeIN2343"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HelicobacterPylori"/>
+        <NamedIndividual IRI="#HelicobacterPyloriIN7232"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RoutOfInfection"/>
+        <NamedIndividual IRI="#Inhalation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KlebsiellaPneumoniae"/>
+        <NamedIndividual IRI="#KlebsiellaPneumoniaeIN2223"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MoraxellaCatarrhalis"/>
+        <NamedIndividual IRI="#MoraxellaCatarrhalisIN34212"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MycobacteriumTuberculosis"/>
+        <NamedIndividual IRI="#MycobacteriumTuberculosisIN3412"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NeisseriaGonorrhoeae"/>
+        <NamedIndividual IRI="#NeisseriaGonorrhoeaeIN1232"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NeisseriaMeningitidis"/>
+        <NamedIndividual IRI="#NeisseriaMeningitidisIN2329"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NocardiaAsteroides"/>
+        <NamedIndividual IRI="#NocardiaAseroidesIN3472"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PeptococcusMagnus"/>
+        <NamedIndividual IRI="#PeptococcusMagnusIN4352"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PeptococcusNiger"/>
+        <NamedIndividual IRI="#PeptococcusNigerIN43423"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PeptococcusPrevotti"/>
+        <NamedIndividual IRI="#PeptococcusPrevottiIN2345"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PseudomonasAeruginosa"/>
+        <NamedIndividual IRI="#PseudomonasAeruginosaIN4352"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SalmonellaTyphi"/>
+        <NamedIndividual IRI="#SalmonellaTyphiIN3243"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ShigellaSonnei"/>
+        <NamedIndividual IRI="#ShigellaSonneiIN3432"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RoutOfInfection"/>
+        <NamedIndividual IRI="#Skin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RoutOfInfection"/>
+        <NamedIndividual IRI="#Soil"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StaphylococcusAureus"/>
+        <NamedIndividual IRI="#StaphylococcusAureusIN3243"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StaphylococcusEpidermidis"/>
+        <NamedIndividual IRI="#StaphylococcusEpidermidisIN32532"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StreptococcusAgalactiae"/>
+        <NamedIndividual IRI="#StreptococcusAgalactiaeIN3423"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StreptococcusMutans"/>
+        <NamedIndividual IRI="#StreptococcusMutansIN342"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StreptococcusPneumoniae"/>
+        <NamedIndividual IRI="#StreptococcusPneumoniaeIN32423"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StreptococcusPyogenes"/>
+        <NamedIndividual IRI="#StreptococcusPyogenesIN2412"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StreptococcusSanquis"/>
+        <NamedIndividual IRI="#StreptococcusSanguisIN3422"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VeilonellaParvula"/>
+        <NamedIndividual IRI="#VailonellaParvulaIN3423"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCellWall"/>
+        <NamedIndividual IRI="#AcinetobacterBaumaniiIN24532"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCellWall"/>
+        <NamedIndividual IRI="#AnaerococcusPrevottiIN3433"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCellWall"/>
+        <NamedIndividual IRI="#BacillusCereusIN4352"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCellWall"/>
+        <NamedIndividual IRI="#BacteroidesFragilisIN32423"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCellWall"/>
+        <NamedIndividual IRI="#BordatellaPertussisIN43234"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCellWall"/>
+        <NamedIndividual IRI="#CampyloBacterJejuniIN3324"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCellWall"/>
+        <NamedIndividual IRI="#ClostridiumDifficileIN3532"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">34</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCellWall"/>
+        <NamedIndividual IRI="#EnterobacterCloacaeIN3423"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCellWall"/>
+        <NamedIndividual IRI="#EnterococcusFaecalisIN3442"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">41</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCellWall"/>
+        <NamedIndividual IRI="#EnterococcusFaeciumIN3432"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCellWall"/>
+        <NamedIndividual IRI="#EscherichiaColiIN3423"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCellWall"/>
+        <NamedIndividual IRI="#HaemophilusInflienzaeIN2343"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCellWall"/>
+        <NamedIndividual IRI="#HelicobacterPyloriIN7232"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCellWall"/>
+        <NamedIndividual IRI="#KlebsiellaPneumoniaeIN2223"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCellWall"/>
+        <NamedIndividual IRI="#MoraxellaCatarrhalisIN34212"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCellWall"/>
+        <NamedIndividual IRI="#MycobacteriumTuberculosisIN3412"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">26</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCellWall"/>
+        <NamedIndividual IRI="#NeisseriaGonorrhoeaeIN1232"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCellWall"/>
+        <NamedIndividual IRI="#NeisseriaMeningitidisIN2329"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCellWall"/>
+        <NamedIndividual IRI="#NocardiaAseroidesIN3472"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCellWall"/>
+        <NamedIndividual IRI="#PeptococcusMagnusIN4352"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">44</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCellWall"/>
+        <NamedIndividual IRI="#PeptococcusNigerIN43423"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">46</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCellWall"/>
+        <NamedIndividual IRI="#PeptococcusPrevottiIN2345"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">48</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCellWall"/>
+        <NamedIndividual IRI="#PseudomonasAeruginosaIN4352"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCellWall"/>
+        <NamedIndividual IRI="#SalmonellaTyphiIN3243"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCellWall"/>
+        <NamedIndividual IRI="#ShigellaSonneiIN3432"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCellWall"/>
+        <NamedIndividual IRI="#StaphylococcusAureusIN3243"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">46</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCellWall"/>
+        <NamedIndividual IRI="#StaphylococcusEpidermidisIN32532"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">47</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCellWall"/>
+        <NamedIndividual IRI="#StreptococcusAgalactiaeIN3423"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">47</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCellWall"/>
+        <NamedIndividual IRI="#StreptococcusMutansIN342"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">47</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCellWall"/>
+        <NamedIndividual IRI="#StreptococcusPneumoniaeIN32423"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">46</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCellWall"/>
+        <NamedIndividual IRI="#StreptococcusPyogenesIN2412"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCellWall"/>
+        <NamedIndividual IRI="#StreptococcusSanguisIN3422"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">28</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCellWall"/>
+        <NamedIndividual IRI="#VailonellaParvulaIN3423"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCellWall"/>
+        <NamedIndividual IRI="#VibrioCholeraeIN3241"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasRespiration"/>
         <ObjectProperty IRI="#hasAttribute"/>
@@ -1878,6 +2548,22 @@
         <ObjectProperty IRI="#isSpecyficCharacteristicOf"/>
         <ObjectProperty IRI="#isAttributeOf"/>
     </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasAttribute"/>
+        <ObjectProperty IRI="#isAttributeOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasRespiration"/>
+        <ObjectProperty IRI="#isRespirationOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasShape"/>
+        <ObjectProperty IRI="#isShapeOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
+        <ObjectProperty IRI="#isSpecyficCharacteristicOf"/>
+    </InverseObjectProperties>
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#hasStaining"/>
     </FunctionalObjectProperty>
@@ -1899,6 +2585,75 @@
     <InverseFunctionalObjectProperty>
         <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
     </InverseFunctionalObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasAttribute"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isAttributeOf"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRespiration"/>
+        <Class IRI="#Bacteria"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasShape"/>
+        <Class IRI="#Bacteria"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
+        <Class IRI="#Bacteria"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isRespirationOf"/>
+        <Class IRI="#BacteriaRespiration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isShapeOf"/>
+        <Class IRI="#BacteriaShape"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSpecyficCharacteristicOf"/>
+        <Class IRI="#BacteriaSpecyficCharacteristic"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRespiration"/>
+        <Class IRI="#BacteriaRespiration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRoutOfInfection"/>
+        <Class IRI="#RoutOfInfection"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasShape"/>
+        <Class IRI="#BacteriaShape"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSpecyficCharacteristic"/>
+        <Class IRI="#BacteriaSpecyficCharacteristic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasStaining"/>
+        <Class IRI="#BacteriaStaining"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isRespirationOf"/>
+        <Class IRI="#Bacteria"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isShapeOf"/>
+        <Class IRI="#Bacteria"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSpecyficCharacteristicOf"/>
+        <Class IRI="#Bacteria"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasCellWall"/>
+    </FunctionalDataProperty>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasCellWall"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
         <IRI>#EnterobacteriaceaeFamilyBacteria</IRI>
