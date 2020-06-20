@@ -78,4 +78,10 @@ The html file is loaded from stdin, and the obtained extract should be output to
 * **Person_list.wsdl** - wsdl with the service of adding person (request and response)
 
 ## OWL
-* **burger-ontology.owl** - a burger ontology that describes various burgers based on their toppings (status: in development)
+* **bacteria-ontology.owl** - bacteria ontology that describes various bacteria based on their characteristics
+* **burger-ontology.owl** - burger ontology that describes various burgers based on their toppings 
+
+Visualizations (bacteria ontology on the left side and burger ontology on the right side): 
+
+
+<img src="./OWL/visualizations/bacteria_visualiztion.png" width="380"> <img src="./OWL/visualizations/burger_visualization.png" width="480">
