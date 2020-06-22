@@ -33,4 +33,14 @@ public class CelestialBodyController {
         return celestialBodyService.getCelestialBodyById(id)
                 .orElse(null);
     }
+
+    @DeleteMapping(path = "{id}")
+    public void deleteCelestialBodyById(@PathVariable("id") UUID id){
+        celestialBodyService.deleteCeletialBody(id);
+    }
+
+    @PutMapping(path = "{id}")
+    public void updateCelestialBody(@PathVariable("id") UUID id, @RequestBody CelestialBody celestialBodyToUpdate){
+        celestialBodyService.updateCelestialBody(id, celestialBodyToUpdate);
+    }
 }

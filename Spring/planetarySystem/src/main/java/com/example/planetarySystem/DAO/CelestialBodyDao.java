@@ -18,7 +18,7 @@ public interface CelestialBodyDao {
 
     Optional<CelestialBody> selectCelestialBodyById(UUID id);
 
-    int deleteCeletialBodyId(UUID id);
+    int deleteCelestialBodyId(UUID id);
 
     int updateCelestialBodyById(UUID id, CelestialBody celestialBody);
 }

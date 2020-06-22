@@ -31,4 +31,12 @@ public class CelestialBodyService {
     public Optional<CelestialBody> getCelestialBodyById(UUID id){
         return celestialBodyDao.selectCelestialBodyById(id);
     }
+
+    public int deleteCeletialBody(UUID id){
+        return celestialBodyDao.deleteCelestialBodyId(id);
+    }
+
+    public int updateCelestialBody(UUID id, CelestialBody newCelestialBody){
+        return celestialBodyDao.updateCelestialBodyById(id, newCelestialBody);
+    }
 }

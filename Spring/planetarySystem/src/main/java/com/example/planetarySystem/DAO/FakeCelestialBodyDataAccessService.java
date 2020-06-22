@@ -32,12 +32,26 @@ public class FakeCelestialBodyDataAccessService implements CelestialBodyDao {
     }
 
     @Override
-    public int deleteCeletialBodyId(UUID id) {
-        return 0;
+    public int deleteCelestialBodyId(UUID id) {
+        Optional<CelestialBody> celestialBodyMaybe = selectCelestialBodyById(id);
+        if(!celestialBodyMaybe.isPresent()){
+            return 0;
+        }
+        DB.remove(celestialBodyMaybe.get());
+        return 1;
     }
 
     @Override
-    public int updateCelestialBodyById(UUID id, CelestialBody celestialBody) {
-        return 0;
+    public int updateCelestialBodyById(UUID id, CelestialBody updateCelestialBody) {
+        return selectCelestialBodyById(id)
+                .map(cb -> {
+                    int indexOfCelestialBodyToUpdate = DB.indexOf(cb);
+                    if(indexOfCelestialBodyToUpdate >=0){
+                        DB.set(indexOfCelestialBodyToUpdate, new CelestialBody(id, updateCelestialBody.getName()));
+                        return 1;
+                    }
+                    return 0;
+                })
+                .orElse(0);
     }
 }
