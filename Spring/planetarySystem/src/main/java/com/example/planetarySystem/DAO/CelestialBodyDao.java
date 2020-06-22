@@ -12,4 +12,6 @@ public interface CelestialBodyDao {
         UUID id = UUID.randomUUID();
         return insertCelestialBody(id, celestialBody);
     }
+
+    List<CelestialBody> selectAllCelestialBody();
 }

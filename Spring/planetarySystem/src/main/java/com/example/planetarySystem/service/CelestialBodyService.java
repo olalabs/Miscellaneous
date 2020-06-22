@@ -21,4 +21,8 @@ public class CelestialBodyService {
     public int addCelestialBody(CelestialBody celestialBody){
         return celestialBodyDao.insertCelestialBody(celestialBody);
     }
+
+    public List<CelestialBody> getAllCelestialBody(){
+        return celestialBodyDao.selectAllCelestialBody();
+    }
 }

@@ -17,4 +17,9 @@ public class FakeCelestialBodyDataAccessService implements CelestialBodyDao {
         DB.add(new CelestialBody(id, celestialBody.getName()));
         return 1;
     }
+
+    @Override
+    public List<CelestialBody> selectAllCelestialBody() {
+        return DB;
+    }
 }

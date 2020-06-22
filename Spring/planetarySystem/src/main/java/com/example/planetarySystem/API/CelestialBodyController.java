@@ -21,4 +21,8 @@ public class CelestialBodyController {
     public void addCelestialBody(@RequestBody CelestialBody celestialBody){
         celestialBodyService.addCelestialBody(celestialBody);
     }
+    @GetMapping
+    public List<CelestialBody> getAllCelestialBody(){
+        return celestialBodyService.getAllCelestialBody();
+    }
 }
