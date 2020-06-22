@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.UUID;
 
 @RequestMapping("/api/v1/celestialBody")
 @RestController
@@ -21,8 +22,15 @@ public class CelestialBodyController {
     public void addCelestialBody(@RequestBody CelestialBody celestialBody){
         celestialBodyService.addCelestialBody(celestialBody);
     }
+
     @GetMapping
     public List<CelestialBody> getAllCelestialBody(){
         return celestialBodyService.getAllCelestialBody();
+    }
+
+    @GetMapping(path = "{id}")
+    public CelestialBody getCelestialBodyById(@PathVariable("id") UUID id){
+        return celestialBodyService.getCelestialBodyById(id)
+                .orElse(null);
     }
 }

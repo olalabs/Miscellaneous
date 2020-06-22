@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
+import java.util.UUID;
 
 @Service
 public class CelestialBodyService {
@@ -24,5 +26,9 @@ public class CelestialBodyService {
 
     public List<CelestialBody> getAllCelestialBody(){
         return celestialBodyDao.selectAllCelestialBody();
+    }
+
+    public Optional<CelestialBody> getCelestialBodyById(UUID id){
+        return celestialBodyDao.selectCelestialBodyById(id);
     }
 }

@@ -5,6 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 @Repository("fakeDao")
@@ -21,5 +22,22 @@ public class FakeCelestialBodyDataAccessService implements CelestialBodyDao {
     @Override
     public List<CelestialBody> selectAllCelestialBody() {
         return DB;
+    }
+
+    @Override
+    public Optional<CelestialBody> selectCelestialBodyById(UUID id) {
+        return DB.stream()
+                .filter(celestialBody -> celestialBody.getId().equals(id))
+                .findFirst();
+    }
+
+    @Override
+    public int deleteCeletialBodyId(UUID id) {
+        return 0;
+    }
+
+    @Override
+    public int updateCelestialBodyById(UUID id, CelestialBody celestialBody) {
+        return 0;
     }
 }
