@@ -16,7 +16,7 @@ public class CelestialBodyService {
     private final CelestialBodyDao celestialBodyDao;
 
     @Autowired
-    public CelestialBodyService(@Qualifier("fakeDao") CelestialBodyDao celestialBodyDao) {
+    public CelestialBodyService(@Qualifier("postgres implementation") CelestialBodyDao celestialBodyDao) {
         this.celestialBodyDao = celestialBodyDao;
     }
 
