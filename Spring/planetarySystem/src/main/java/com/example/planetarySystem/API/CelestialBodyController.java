@@ -3,8 +3,10 @@ package com.example.planetarySystem.API;
 import com.example.planetarySystem.model.CelestialBody;
 import com.example.planetarySystem.service.CelestialBodyService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.lang.NonNull;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 import java.util.UUID;
 
@@ -19,7 +21,7 @@ public class CelestialBodyController {
     }
 
     @PostMapping
-    public void addCelestialBody(@RequestBody CelestialBody celestialBody){
+    public void addCelestialBody(@Valid @NonNull @RequestBody CelestialBody celestialBody){
         celestialBodyService.addCelestialBody(celestialBody);
     }
 
@@ -40,7 +42,7 @@ public class CelestialBodyController {
     }
 
     @PutMapping(path = "{id}")
-    public void updateCelestialBody(@PathVariable("id") UUID id, @RequestBody CelestialBody celestialBodyToUpdate){
+    public void updateCelestialBody(@PathVariable("id") UUID id, @Valid @NonNull @RequestBody CelestialBody celestialBodyToUpdate){
         celestialBodyService.updateCelestialBody(id, celestialBodyToUpdate);
     }
 }
