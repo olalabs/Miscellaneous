@@ -69,7 +69,7 @@ The html file is loaded from stdin, and the obtained extract should be output to
 * **htmlParser** - script that parses html to csv. The same rules as in the perl script described above
 
 ## Java (Spring)
-* **planetarySystem** - http methods for celestial bodies implemented with Spring Framework
+* **planetarySystem** - http methods (API layer), service layer and data access layer (connecting to Postgres database running on Docker) for celestial bodies. Project implemented with Spring Framework.
 
 ## Xml Markup Language
 
