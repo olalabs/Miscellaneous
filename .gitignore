@@ -307,3 +307,8 @@ out
 test-output
 atlassian-ide-plugin.xml
 .gradletasknamecache
+
+# Eclipse artifacts, including WTP generated manifests
+.classpath
+.project
+spring-*/src/main/java/META-INF/MANIFEST.MF
