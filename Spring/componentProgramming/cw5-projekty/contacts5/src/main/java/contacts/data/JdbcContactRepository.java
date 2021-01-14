@@ -31,12 +31,25 @@ public class JdbcContactRepository implements ContactRepository {
 						  new ContactRowMapper(), max);
 	}
 
+	@Override
+	public void insert(Contact contact) {
+		jdbc.update("INSERT INTO Contact(first_name, last_name, email, phone) VALUES(?, ?, ?, ?)",
+				contact.getFirstName(),
+				contact.getLastName(),
+				contact.getEmail(),
+				contact.getPhone());
+	}
+
 	private static class ContactRowMapper implements RowMapper<Contact> {
 
 		@Override
 		public Contact mapRow(ResultSet rs, int rowNum) throws SQLException {
-			// TODO Auto-generated method stub
-			return null;
+			//Auto-generated method stub
+			return new Contact(rs.getLong("id"),
+					rs.getString("first_name"),
+					rs.getString("last_name"),
+					rs.getString("email"),
+					rs.getString("phone"));
 		}
 	}
 }

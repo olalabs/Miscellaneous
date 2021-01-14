@@ -8,4 +8,5 @@ public interface ContactRepository {
 
 	List<Contact> findContacts(long max, int count);
 
+	void insert(Contact contact);
 }
