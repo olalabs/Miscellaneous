@@ -50,5 +50,4 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 		// wyłączenie dostępu do statycznych zasobów (plików)
 		configurer.enable();
 	}
-	
 }
