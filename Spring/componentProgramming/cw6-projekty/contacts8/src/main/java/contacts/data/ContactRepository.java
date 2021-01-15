@@ -14,4 +14,5 @@ public interface ContactRepository {
 
 	void update(Contact contact);
 
+	void delete(long id);
 }
